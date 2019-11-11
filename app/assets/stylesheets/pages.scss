@@ -38,3 +38,7 @@ $bg-color-2: #BDD5EA; // pale aqua
 .page-section:nth-child(even) {
 	background-color: $bg-color-2;
 }
+
+.img-fluid.img-thumbnail {
+	max-width: 250px;
+}
