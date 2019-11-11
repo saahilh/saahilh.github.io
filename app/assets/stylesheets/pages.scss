@@ -2,14 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$text-color: #f7f7ff;;
-$contrast-color: #fe5f55;
+$text-color: #f7f7ff;; // ghost white
+$contrast-color: #fe5f55; // sunset orange
+$bg-color-1: #577399; // UCLA blue
+$bg-color-2: #BDD5EA; // pale aqua
 
 .navbar {
-	background-color: #495867;
+	background-color: #495867; //independence
 	text-transform: uppercase;
 
-	a, i {
+	a {
 	  $transition-duration: 0.25s;
 	  color: $text-color;
 
@@ -20,7 +22,19 @@ $contrast-color: #fe5f55;
 	  transition: $transition-duration;
 	}
 
-	a:hover, i:hover{
+	a:hover, a:active {
 		color: $contrast-color; 
 	}
+}
+
+.btn-social i {
+	font-size: 1.5em;
+}
+
+.page-section:nth-child(odd) {
+	background-color: $bg-color-1;
+}
+
+.page-section:nth-child(even) {
+	background-color: $bg-color-2;
 }
