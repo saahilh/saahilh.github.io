@@ -2,12 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$text-color: #f7f7ff;;
+$contrast-color: #fe5f55;
 
 .navbar {
-	background-color: #3d3a4b;
-	color: #D3C0CD;
-}
+	background-color: #495867;
+	text-transform: uppercase;
 
-.page-container {
-	background-color: #E3DFFF;
+	a, i {
+	  $transition-duration: 0.25s;
+	  color: $text-color;
+
+	  -o-transition: $transition-duration;
+	  -ms-transition: $transition-duration;
+	  -moz-transition: $transition-duration;
+	  -webkit-transition: $transition-duration;
+	  transition: $transition-duration;
+	}
+
+	a:hover, i:hover{
+		color: $contrast-color; 
+	}
 }
