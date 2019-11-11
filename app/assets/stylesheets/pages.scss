@@ -30,6 +30,9 @@ $bg-color-3: #BDD5EA; // pale aqua
 .img-fluid.img-thumbnail {
 	max-width: 200px;
 	cursor: pointer;
+	border-radius: 25%;
+	background-color: $text-color;
+	border-color: $bg-color-2;
 }
 
 .social-buttons {
