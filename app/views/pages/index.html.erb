@@ -15,7 +15,7 @@
 
 <div id="intro" class="row mt-1 page-section">
 	<div class="col-xl-12 text-center">
-		<img class="img-fluid rounded img-thumbnail" src="<%= image_url("profile.png") %>" alt="Profile Picture"/>
+		<img class="img-fluid img-thumbnail" src="<%= image_url("profile.png") %>" alt="Profile Picture" data-toggle="modal" data-target="#profile-img-modal"/>
 	</div>
 	<div class="col-xl-12 text-center">
 		<h2>Hi. I'm Saahil.</h2>
@@ -34,4 +34,13 @@
 
 <div id="contact" class="row page-section">
 
+</div>
+
+
+<div id="profile-img-modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-body">
+			<img class="img-fluid" src="<%= image_url("profile.png") %>" alt="Profile Picture"/>
+		</div>
+	</div>
 </div>
