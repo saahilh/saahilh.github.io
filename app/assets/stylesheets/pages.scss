@@ -8,16 +8,6 @@ $bg-color-1: #495867; // independence
 $bg-color-2: #577399; // UCLA blue
 $bg-color-3: #BDD5EA; // pale aqua
 
-.intro {
-	background-image: asset_url('background-885.jpg');
-	height: auto;
-	padding: 100px;
-}
-
-.btn-social i {
-	font-size: 3em;
-}
-
 .page-section:nth-child(odd) {
 	background-color: $bg-color-1;
 	color: $text-color;
@@ -27,27 +17,43 @@ $bg-color-3: #BDD5EA; // pale aqua
 	background-color: $bg-color-3;
 }
 
-.img-fluid.img-thumbnail {
-	max-width: 200px;
-	cursor: pointer;
-	border-radius: 25%;
-	background-color: $text-color;
-	border-color: $bg-color-2;
+.intro {
+	background-image: asset_url('background-885.jpg');
+	height: auto;
+	padding: 100px;
+
+	.profile-picture {
+		max-width: 200px;
+		cursor: pointer;
+		border-radius: 25%;
+		background-color: $text-color;
+		border-color: $bg-color-2;
+	}
+	
+	.profile-name {
+		text-transform: uppercase;
+	}
 }
 
-.social-buttons {
-	a {
-	  $transition-duration: 0.25s;
-	  color: $bg-color-1;
+.contact {
+	.social-buttons {
+		a {
+		  $transition-duration: 0.25s;
+		  color: $bg-color-1;
 
-	  -o-transition: $transition-duration;
-	  -ms-transition: $transition-duration;
-	  -moz-transition: $transition-duration;
-	  -webkit-transition: $transition-duration;
-	  transition: $transition-duration;
-	}
+		  -o-transition: $transition-duration;
+		  -ms-transition: $transition-duration;
+		  -moz-transition: $transition-duration;
+		  -webkit-transition: $transition-duration;
+		  transition: $transition-duration;
+		}
 
-	a:hover, a:active {
-		color: $contrast-color; 
+		a:hover, a:active {
+			color: $contrast-color; 
+		}
+
+		i {
+			font-size: 3em;
+		}
 	}
 }
