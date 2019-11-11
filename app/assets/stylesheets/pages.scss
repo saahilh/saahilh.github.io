@@ -26,8 +26,8 @@ $bg-color-3: #BDD5EA; // pale aqua
 		max-width: 200px;
 		cursor: pointer;
 		border-radius: 25%;
-		background-color: $text-color;
-		border-color: $bg-color-2;
+		background: none;
+		border: none;
 	}
 
 	h1.profile-name {
