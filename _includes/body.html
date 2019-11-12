@@ -1,5 +1,5 @@
 <div id="intro" class="row intro">
-	<div class="col-sm-12 col-xl-12 text-center">
+	<div class="col-sm-12 col-lg-12 col-xl-12 text-center">
 		<img class="profile-picture" src="{{ site.baseurl }}/assets/images/profile.png" alt="Profile Picture"/>
 		<h1 class="profile-name">Saahil Hamayun</h1>
 	</div>
@@ -7,11 +7,11 @@
 
 {% for page_section in site.page_sections %}
 <div id="{{ page_section.html_id }}" class="row page-section {{ page_section.html_id }}">
-	<div class="col-sm-1 col-xl-2"></div>
-	<div class="col-sm-10 col-xl-8">
+	<div class="col-sm-1 col-md-1 col-lg-1 col-xl-2"></div>
+	<div class="col-sm-10 col-lg-10 col-xl-8">
 		{% if page_section.heading %}<h2>{{ page_section.heading }}</h2>{% endif %}
 		{{ page_section.content}}
 	</div>
-	<div class="col-sm-1 col-xl-2"></div>
+	<div class="col-sm-1 col-lg-1 col-xl-2"></div>
 </div>
 {% endfor %}
