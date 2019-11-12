@@ -13,22 +13,22 @@ h2 {
 	text-align: center;
 }
 
-.page-section:nth-child(2) {
+.page-section:nth-child(odd) {
 	background-color: white;
 	color: black;
 }
 
-.page-section:nth-child(3) {
+.page-section:nth-child(4n+2) {
 	background-color: $bg-color-1;
 	color: white;
 }
 
-.page-section:nth-child(4) {
+.page-section:nth-child(4n) {
 	background-color: $bg-color-2;
 	color: white;
 }
 
-.page-section:nth-child(5) {
+.page-section:last-child {
 	background-color: darkgrey;
 	color: white;
 }
