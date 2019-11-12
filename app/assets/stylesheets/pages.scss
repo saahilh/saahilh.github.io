@@ -8,24 +8,19 @@ $text-color-1: #fac3ca; // ghost white
 $bg-color-2: #2da0a6; 
 $text-color-2: #ace0e1;
 
-.page-section:nth-child(odd) {
-	color: $text-color-1;
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
 
-	h2, h3 {
-		text-transform: uppercase;
-		background-color: $bg-color-1;
-		color: $text-color-1;
-	}
+.page-section:nth-child(odd) {
+	background-color: $bg-color-1;
+	color: $text-color-1;
 }
 
 .page-section:nth-child(even) {
+	background-color: $bg-color-2;
 	color: $text-color-2;
-
-	h2, h3 {
-		text-transform: uppercase;
-		background-color: $bg-color-2;
-		color: $text-color-2;
-	}
 }
 
 .intro {
