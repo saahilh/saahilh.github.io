@@ -1,7 +1,3 @@
-// Place all the styles related to the Page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 $bg-color-1: #e85867;
 $text-color-1: #fac3ca;
 
@@ -34,7 +30,7 @@ h2 {
 }
 
 .intro {
-	background-image: asset_url('background-885-dark.jpg');
+	background-image: url('../img/background-885-dark.jpg');
 	background-attachment: fixed;
 
 	height: auto;

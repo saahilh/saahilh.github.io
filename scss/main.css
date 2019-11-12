@@ -1,0 +1,60 @@
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-section:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+.page-section:nth-child(4n) {
+  background-color: #e85867;
+  color: white;
+}
+
+.page-section:nth-child(4n+2) {
+  background-color: #2da0a6;
+  color: white;
+}
+
+.page-section:last-child {
+  background-color: darkgrey;
+  color: white;
+}
+
+.intro {
+  background-image: url("../img/background-885-dark.jpg");
+  background-attachment: fixed;
+  height: auto;
+  padding: 100px;
+  background-size: cover;
+}
+.intro .profile-picture {
+  max-width: 200px;
+  border-radius: 15%;
+  height: auto;
+  padding: 0.25rem;
+}
+.intro h1.profile-name {
+  color: #e85867;
+  background-color: none;
+  font-weight: bold;
+}
+
+.contact .social-buttons a {
+  color: white;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.contact .social-buttons a:hover, .contact .social-buttons a:active {
+  color: #e85867;
+}
+.contact .social-buttons i {
+  font-size: 3em;
+}
+
+/*# sourceMappingURL=main.css.map */
