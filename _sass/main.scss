@@ -5,30 +5,11 @@ $bg-color-2: #2da0a6;
 $text-color-2: #ace0e1;
 
 @import "intro";
+@import "page_section";
 
 h2 {
 	text-transform: uppercase;
 	text-align: center;
-}
-
-.page-section:nth-child(even) {
-	background-color: white;
-	color: black;
-}
-
-.page-section:nth-child(4n) {
-	background-color: $bg-color-1;
-	color: white;
-}
-
-.page-section:nth-child(4n+2) {
-	background-color: $bg-color-2;
-	color: white;
-}
-
-.page-section:last-child {
-	background-color: darkgrey;
-	color: white;
 }
 
 .contact {
