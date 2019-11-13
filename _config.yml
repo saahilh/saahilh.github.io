@@ -14,6 +14,7 @@ email: saahil.hamayun@mail.mcgill.ca
 #
 collections:
   - page_sections
+  - projects
 
 exclude:
   - .sass-cache/
