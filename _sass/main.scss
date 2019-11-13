@@ -4,6 +4,8 @@ $text-color-1: #fac3ca;
 $bg-color-2: #2da0a6; 
 $text-color-2: #ace0e1;
 
+@import "intro";
+
 h2 {
 	text-transform: uppercase;
 	text-align: center;
@@ -27,32 +29,6 @@ h2 {
 .page-section:last-child {
 	background-color: darkgrey;
 	color: white;
-}
-
-.intro {
-	background-image: url($base-url + '/assets/images/background-885-dark.jpg');
-	background-attachment: fixed;
-
-	height: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
-
-	background-size: cover;
-	
-	display:block;
-
-	.profile-picture {
-		max-width: 200px;
-		border-radius: 15%;
-		height: auto;
-		padding: 0.25rem;
-	}
-
-	h1.profile-name {
-		color: $bg-color-1;
-		background-color: none;
-		font-weight: bold;
-	}
 }
 
 .contact {

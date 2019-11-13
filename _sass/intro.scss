@@ -1,0 +1,25 @@
+.intro {
+	background-image: url($base-url + '/assets/images/background-885-dark.jpg');
+	background-attachment: fixed;
+
+	height: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	background-size: cover;
+	
+	display:block;
+
+	.profile-picture {
+		max-width: 200px;
+		border-radius: 15%;
+		height: auto;
+		padding: 0.25rem;
+	}
+
+	h1.profile-name {
+		color: $bg-color-1;
+		background-color: none;
+		font-weight: bold;
+	}
+}
