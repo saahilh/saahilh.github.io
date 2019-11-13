@@ -5,12 +5,12 @@
 
 .page-section:nth-child(even) {
 	background-color: $bg-color-1;
-	color: white;
+	color: $text-color-1;
 }
 
 .page-section:nth-child(odd) {
 	background-color: $bg-color-2;
-	color: black;
+	color: $text-color-2;
 }
 
 .page-section:last-child {
