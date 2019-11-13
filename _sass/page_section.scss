@@ -3,12 +3,12 @@
 	padding-bottom: 20px;
 }
 
-.page-section:nth-child(4n+2) {
+.page-section:nth-child(even) {
 	background-color: $bg-color-1;
 	color: white;
 }
 
-.page-section:nth-child(even) {
+.page-section:nth-child(odd) {
 	background-color: $bg-color-2;
 	color: black;
 }
