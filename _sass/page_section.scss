@@ -3,11 +3,6 @@
 	padding-bottom: 20px;
 }
 
-.page-section:nth-child(4n) {
-	background-color: $contrast-color;
-	color: white;
-}
-
 .page-section:nth-child(4n+2) {
 	background-color: $bg-color-1;
 	color: white;
