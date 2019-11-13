@@ -4,7 +4,9 @@ heading: Projects
 ---
 I've worked on a variety of projects over the years. Here are some of them:
 <ul>
-	<li>Graduate Attribute Managements System (GAMS): Node.js application used to analyze program achievement through student grades</li>
+	{% for project in site.projects %}
+		<li>{{ project.name }}: {{project.description}}</li>
+	{% endfor %}
 	<li>
 		<div class="project">
 			<h4>Classroom Friend</h4>
@@ -19,10 +21,4 @@ I've worked on a variety of projects over the years. Here are some of them:
 			</a>
 		</div>
 	</li>
-	<li>OurCourses: Flask-based basic social network for students to communicate</li>
-	<li>RestoApp: Spring Boot application to manage restaurant layout, orders, and reservations</li>
-	<li>Merch Manager: Ruby on Rails application to managing products intended for Shopify app store</li>
-	<li>Creating an object oriented representation of a LeJOS robot to more easily command it by refactoring implementations</li>
-	<li>Linux-like file system implementation using C</li>
-	<li>Domain specific language for car dealerships to manage inventory and using Acceleo</li>
 </ul>
