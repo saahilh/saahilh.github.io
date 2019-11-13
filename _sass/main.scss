@@ -34,7 +34,6 @@ h2 {
 	background-attachment: fixed;
 
 	height: auto;
-	padding: 100px;
 
 	background-size: cover;
 	
@@ -77,11 +76,7 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 575px) {
-	.intro {
-		padding: 20px;
-	}
-}
+@media screen and (max-width: 575px) {}
 
 @media screen and (min-width: 576px) {}
 
