@@ -6,6 +6,7 @@ $text-color-2: #ace0e1;
 
 @import "intro";
 @import "page_section";
+@import "contact";
 
 html {
 	font-size: 16px;
@@ -14,29 +15,6 @@ html {
 h2 {
 	text-transform: uppercase;
 	text-align: center;
-}
-
-.contact {
-	.social-buttons {
-		a {
-		  $transition-duration: 0.25s;
-		  color: white;
-
-		  -o-transition: $transition-duration;
-		  -ms-transition: $transition-duration;
-		  -moz-transition: $transition-duration;
-		  -webkit-transition: $transition-duration;
-		  transition: $transition-duration;
-		}
-
-		a:hover, a:active {
-			color: $bg-color-1; 
-		}
-
-		i {
-			font-size: 3em;
-		}
-	}
 }
 
 @media screen and (max-width: 575px) {}
