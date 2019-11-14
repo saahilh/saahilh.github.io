@@ -1,21 +1,18 @@
 .project-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 2% 2%;
+	display: block;
 }
 
 .project {
-	grid-column: span 1;
-
-	width: 300px;
+	width: 75%;
 	padding: 20px;
+	margin: 20px auto;
 
 	background-color: $bg-color-2;
 	color: $text-color-2;
 
 	img {
-		height: 200px;
-		width: 200px;
+		height: auto;
+		width: 100%;
 	}
 
 	a {
