@@ -27,7 +27,9 @@ heading: Projects
 					</a>
 				{% endif %}
 			</div>
-		{% else %}
+		{% endif %}
+
+		{% unless project.image_name %} {% comment %} Used this instead of an else statement because a console warning bug was coming up {% endcomment %}
 			<h4>{{ project.name }}</h4>
 			<p>{{ project.description }}</p>
 			<p>Technologies: {{ project.tech }}</p>
@@ -41,7 +43,7 @@ heading: Projects
 					<i class="fa fa-external-link"> Try it out</i>
 				</a>
 			{% endif %}
-		{% endif %}
+		{% endunless %}
 	</div>
 {% endfor %}
 </div>
