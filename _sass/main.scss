@@ -6,6 +6,22 @@ $text-color-1: white;
 $bg-color-2: white;
 $text-color-2: black;
 
+@mixin cross-browser-transition($transition) {
+	-o-transition: $transition;
+  -ms-transition: $transition;
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin cross-browser-transform($x, $y) {
+	-o-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-webkit-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+
 @import "intro";
 @import "page_section";
 @import "contact";
