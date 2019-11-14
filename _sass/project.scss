@@ -10,6 +10,11 @@
 	background-color: $bg-color-2;
 	color: $text-color-2;
 
+	h4 {
+		color: $contrast-color;
+		text-transform: uppercase;
+	}
+
 	img {
 		height: auto;
 		width: 100%;
