@@ -21,7 +21,40 @@
 		border: solid 1px grey;
 	}
 
-	a {
-		margin: 5px;
+	.description {
+		a {
+			margin: 5px;
+		}
+	}
+}
+
+// fade-in / fade-out effect for projects
+.project {
+	position: relative;
+
+	img {
+		transition: 0.5s ease;
+	}
+
+	.description {
+		transition: 0.5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+}
+
+.project:hover {
+	img {
+		transition: 0.5s ease;
+		opacity: 0;
+	}
+
+	.description {
+		transition: 0.5s ease;
+		opacity: 1;
 	}
 }

@@ -7,18 +7,20 @@ heading: Projects
 	<div class="project text-center">
 		<h4>{{ project.name }}</h4>
 		{% if project.image_name %}<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }} Image"/>{% endif %}
-		<p>{{ project.description }}</p>
-		<p>Technologies: {{ project.tech }}</p>
-		{% if project.github_url %}
-			<a class="btn btn-dark" href="{{ project.github_url }}" target="_blank">
-				<i class="fa fa-github"> {{ project.name }}</i>
-			</a>
-		{% endif %}
-		{% if project.try_url %}
-			<a class="btn btn-dark" href="{{ project.try_url }}" target="_blank">
-				<i class="fa fa-external-link"> Try it out</i>
-			</a>
-		{% endif %}
+		<div class="description">
+			<p>{{ project.description }}</p>
+			<p>Technologies: {{ project.tech }}</p>
+			{% if project.github_url %}
+				<a class="btn btn-dark" href="{{ project.github_url }}" target="_blank">
+					<i class="fa fa-github"> {{ project.name }}</i>
+				</a>
+			{% endif %}
+			{% if project.try_url %}
+				<a class="btn btn-dark" href="{{ project.try_url }}" target="_blank">
+					<i class="fa fa-external-link"> Try it out</i>
+				</a>
+			{% endif %}
+		</div>
 	</div>
 {% endfor %}
 </div>
