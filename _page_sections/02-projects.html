@@ -10,12 +10,12 @@ heading: Projects
 		<p>{{ project.description }}</p>
 		<p>Technologies: {{ project.tech }}</p>
 		{% if project.github_url %}
-			<a class="btn btn-light" href="{{ project.github_url }}">
+			<a class="btn btn-dark" href="{{ project.github_url }}">
 				<i class="fa fa-github"> {{ project.name }}</i>
 			</a>
 		{% endif %}
 		{% if project.try_url %}
-			<a class="btn btn-light" href="{{ project.try_url }}">
+			<a class="btn btn-dark" href="{{ project.try_url }}">
 				<i class="fa fa-external-link"> Try it out</i>
 			</a>
 		{% endif %}
