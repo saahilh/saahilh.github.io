@@ -5,9 +5,30 @@ heading: Projects
 <div class="project-container">
 {% for project in site.projects %}
 	<div class="project text-center">
-		<h4>{{ project.name }}</h4>
-		{% if project.image_name %}<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }} Image"/>{% endif %}
-		<div class="description">
+		{% if project.image_name %}
+			<h4>{{ project.name }}</h4>
+			<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }} Image"/>
+			<div class="description">
+				<p>{{ project.description }}</p>
+				<p>Technologies: {{ project.tech }}</p>
+				{% if project.github_url %}
+					<a class="btn btn-dark" href="{{ project.github_url }}" target="_blank">
+						<i class="fa fa-github"> {{ project.name }}</i>
+					</a>
+				{% endif %}
+				{% if project.try_url %}
+					<a class="btn btn-dark" href="{{ project.try_url }}" target="_blank">
+						<i class="fa fa-external-link"> Try it out</i>
+					</a>
+				{% endif %}
+				{% if project.image_name %}
+					<a class="btn btn-dark" href="{{ base-url }}/assets/images/{{ project.image_name }}" target="_blank">
+						<i class="fa fa-image"> View image</i>
+					</a>
+				{% endif %}
+			</div>
+		{% else %}
+			<h4>{{ project.name }}</h4>
 			<p>{{ project.description }}</p>
 			<p>Technologies: {{ project.tech }}</p>
 			{% if project.github_url %}
@@ -20,7 +41,7 @@ heading: Projects
 					<i class="fa fa-external-link"> Try it out</i>
 				</a>
 			{% endif %}
-		</div>
+		{% endif %}
 	</div>
 {% endfor %}
 </div>
