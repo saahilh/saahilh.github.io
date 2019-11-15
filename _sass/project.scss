@@ -22,6 +22,8 @@
 	padding: 20px;
 	margin: 20px auto;
 
+	position: relative;
+
 	background-color: $bg-color-2;
 	color: $text-color-2;
 
@@ -33,20 +35,12 @@
 	}
 
 	img {
-		max-height: 250px;
-		height: auto;
-		width: 100%;
+		display: none;
 	}
 
 	.description {
 		width: 100%;
 		padding: 10px;
-
-		@include cross-browser-transform(translate(-50%, -50%));
-
-		position: absolute;
-		top: 50%;
-		left: 50%;
 
 		background-color: $contrast-color;
 		color: white;
@@ -59,14 +53,27 @@
 
 // Fade-in / fade-out effect for project panels.
 // This media query attempts to exclude touch screen devices.
+
 @media (pointer: fine) {
 	$transition: 0.75s ease;
 
 	.project {
-		position: relative;
+		img {
+			display: block;
+			max-height: 250px;
+			height: auto;
+			width: 100%;
+		}
 
 		> * {
 			@include cross-browser-transition($transition);
+		}
+
+		.description {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include cross-browser-transform(translate(-50%, -50%));
 		}
 
 		.description.with-image {	
