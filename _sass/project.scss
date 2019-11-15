@@ -1,9 +1,24 @@
 .project-container {
-	display: block;
+	display: grid;
+
+	@media screen and (max-width: 576px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+	}
+
+	@media screen and (min-width: 577px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	@media screen and (min-width: 1300px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
 }
 
 .project {
-	width: 75%;
+	width: 95%;
 	padding: 20px;
 	margin: 20px auto;
 
@@ -18,13 +33,23 @@
 	}
 
 	img {
+		max-height: 250px;
 		height: auto;
-		width: 100%;
+		width: auto;
 	}
 
 	.description {
+		width: 100%;
+		padding: 10px;
+
+		@include cross-browser-transform(translate(-50%, -50%));
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
 		a {
-			margin: 5px;
+			margin: 2px;
 		}
 	}
 }
@@ -41,13 +66,8 @@
 			@include cross-browser-transition($transition);
 		}
 
-		.description {
-			@include cross-browser-transform(translate(-50%, -50%));
-
+		.description.with-image {	
 			opacity: 0;
-			position: absolute;
-			top: 50%;
-			left: 50%;
 		}
 	}
 
@@ -57,7 +77,7 @@
 			transform: scale(1.1);
 		}
 
-		.description {
+		.description.with-image {
 			opacity: 1;
 		}
 	}
