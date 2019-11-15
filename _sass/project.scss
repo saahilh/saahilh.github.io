@@ -35,12 +35,11 @@
 	.project {
 		position: relative;
 
-		img {
+		> * {
 			@include cross-browser-transition($transition);
 		}
 
 		.description {
-			@include cross-browser-transition($transition);
 			@include cross-browser-transform(translate(-50%, -50%));
 
 			opacity: 0;
@@ -52,12 +51,10 @@
 
 	.project:hover {
 		img {
-			@include cross-browser-transition($transition);
 			opacity: 0;
 		}
 
 		.description {
-			@include cross-browser-transition($transition);
 			opacity: 1;
 		}
 	}
