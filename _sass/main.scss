@@ -14,12 +14,12 @@ $text-color-2: black;
   transition: $transition;
 }
 
-@mixin cross-browser-transform($x, $y) {
-	-o-transform: translate($x, $y);
-	-ms-transform: translate($x, $y);
-	-moz-transform: translate($x, $y);
-	-webkit-transform: translate($x, $y);
-	transform: translate($x, $y);
+@mixin cross-browser-transform($transform) {
+	-o-transform: $transform;
+	-ms-transform: $transform;
+	-moz-transform: $transform;
+	-webkit-transform: $transform;
+	transform: $transform;
 }
 
 @import "intro";
