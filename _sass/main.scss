@@ -22,9 +22,9 @@ $text-color-2: black;
 	transform: $transform;
 }
 
-@import "intro";
-@import "page_section";
-@import "contact";
+@import "header";
+@import "section";
+@import "footer";
 @import "project";
 
 html {
