@@ -23,12 +23,8 @@
     
     {% for page_section in site.page_sections %}
     <section aria-label="{{ page_section.html_id }}" class="{{ page_section.html_id }}">
-      {% if page_section.heading %}
-        <h2 class="section-heading">{{ page_section.heading }}</h2>
-      {% endif %}
-      <div class="section-content">
-        {{ page_section.content}}
-      </div>
+      <h2 class="section-heading">{{ page_section.heading }}</h2>
+      <div class="section-content">{{ page_section.content}}</div>
     </section>
     {% endfor %}
 
