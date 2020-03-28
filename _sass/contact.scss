@@ -1,16 +1,19 @@
-.contact {
-	.social-buttons {
-		a {
-		  @include cross-browser-transition(0.25s);
-		  color: white;
-		}
+footer {
+	text-align: center;
 
-		a:hover, a:active {
-			color: $contrast-color; 
-		}
+	background-color: darkgrey;
+	color: white;
 
-		i {
-			font-size: 3em;
-		}
+	a.btn {
+		@include cross-browser-transition(0.25s);
+		color: white;
+	}
+
+	a.btn:hover, a.btn:active {
+		color: $contrast-color; 
+	}
+
+	.btn i {
+		font-size: 3em;
 	}
 }
