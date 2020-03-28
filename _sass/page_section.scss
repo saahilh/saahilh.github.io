@@ -1,25 +1,28 @@
-.page-section {
-	padding-top: 20px;
-	padding-bottom: 20px;
-
+section {
+	padding: 20px 0;
+	
 	.section-heading {
 		text-decoration: underline;
 		text-decoration-color: $contrast-color;
 		padding-bottom: 10px;
 	}
+
+	.section-content {
+		max-width: 50%;
+	}
 }
 
-.page-section:nth-child(even) {
+section:nth-child(even) {
 	background-color: $bg-color-2;
 	color: $text-color-2;
 }
 
-.page-section:nth-child(odd) {
+section:nth-child(odd) {
 	background-color: $bg-color-1;
 	color: $text-color-1;
 }
 
-.page-section:last-child {
+section:last-child {
 	background-color: darkgrey;
 	color: white;
 }

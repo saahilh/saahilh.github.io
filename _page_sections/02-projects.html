@@ -2,12 +2,12 @@
 html_id: projects
 heading: Projects
 ---
-<div class="project-container">
+<div class="projects-container">
 {% for project in site.projects %}
-	<div class="project text-center">
+	<div class="project">
 		{% if project.image_name %}
 			<h4>{{ project.name }}</h4>
-			<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }} Image"/>
+			<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }}"/>
 			<div class="description with-image">
 				<p>{{ project.description }}</p>
 				<p>Technologies: {{ project.tech }}</p>

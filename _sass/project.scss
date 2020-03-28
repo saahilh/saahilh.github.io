@@ -1,25 +1,14 @@
-.project-container {
-	display: grid;
-
-	@media screen and (max-width: 576px) {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(6, 1fr);
-	}
-
-	@media screen and (min-width: 577px) {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(3, 1fr);
-	}
-
-	@media screen and (min-width: 1300px) {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
 }
 
 .project {
-	width: 95%;
-	padding: 20px;
+	min-width: 500px;
+	max-width: 500px;
+	min-height: 300px;
+	max-height: 300px;
 	margin: 20px auto;
 
 	position: relative;
@@ -32,6 +21,7 @@
 	h4 {
 		color: $contrast-color;
 		text-transform: uppercase;
+		padding: 10px;
 	}
 
 	img {
@@ -40,6 +30,7 @@
 
 	.description {
 		width: 100%;
+		height: 70%;
 		padding: 10px;
 
 		background-color: $contrast-color;
@@ -51,44 +42,44 @@
 	}
 }
 
-// Fade-in / fade-out effect for project panels.
-// This media query attempts to exclude touch screen devices.
+// // Fade-in / fade-out effect for project panels.
+// // This media query attempts to exclude touch screen devices.
 
-@media (pointer: fine) {
-	$transition: 0.75s ease;
+// @media (pointer: fine) {
+// 	$transition: 0.75s ease;
 
-	.project {
-		img {
-			display: block;
-			max-height: 250px;
-			height: auto;
-			width: 100%;
-		}
+// 	.project {
+// 		img {
+// 			display: block;
+// 			max-height: 250px;
+// 			height: auto;
+// 			width: 100%;
+// 		}
 
-		> * {
-			@include cross-browser-transition($transition);
-		}
+// 		> * {
+// 			@include cross-browser-transition($transition);
+// 		}
 
-		.description {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			@include cross-browser-transform(translate(-50%, -50%));
-		}
+// 		.description {
+// 			position: absolute;
+// 			top: 50%;
+// 			left: 50%;
+// 			@include cross-browser-transform(translate(-50%, -50%));
+// 		}
 
-		.description.with-image {	
-			opacity: 0;
-		}
-	}
+// 		.description.with-image {	
+// 			opacity: 0;
+// 		}
+// 	}
 
-	.project:hover {
-		img {
-			opacity: 0;
-			transform: scale(1.1);
-		}
+// 	.project:hover {
+// 		img {
+// 			opacity: 0;
+// 			transform: scale(1.1);
+// 		}
 
-		.description.with-image {
-			opacity: 1;
-		}
-	}
-}
+// 		.description.with-image {
+// 			opacity: 1;
+// 		}
+// 	}
+// }
