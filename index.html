@@ -21,10 +21,10 @@
       <h1 class="profile-name">Saahil Hamayun</h1>
     </header>
     
-    {% for page_section in site.page_sections %}
-    <section aria-label="{{ page_section.html_id }}" class="{{ page_section.html_id }}">
-      <h2 class="section-heading">{{ page_section.heading }}</h2>
-      <div class="section-content">{{ page_section.content}}</div>
+    {% for section in site.sections %}
+    <section aria-label="{{ section.label }}" class="{{ page_section.html_id }}">
+      <h2 class="section-heading">{{ section.heading }}</h2>
+      <div class="section-content">{{ section.content}}</div>
     </section>
     {% endfor %}
 
