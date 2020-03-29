@@ -22,17 +22,17 @@
     </header>
     
     {% for section in site.sections %}
-    <section aria-label="{{ section.label }}" class="{{ section.label }}">
-      <h2 class="section-heading">{{ section.heading }}</h2>
-      <div class="section-content">{{ section.content}}</div>
-    </section>
+      <section aria-label="{{ section.label }}" class="{{ section.label }}">
+        <h2 class="section-heading">{{ section.heading }}</h2>
+        <div class="section-content">{{ section.content}}</div>
+      </section>
     {% endfor %}
 
     <footer>
-      {% include footerbutton.html href='mailto:saahil.hamayun@mail.mcgill.ca?Subject=Hello%20Saahil%21' icon='fa-envelope' %}
-      {% include footerbutton.html href='https://www.linkedin.com/in/saahilh/' icon='fa-linkedin' %}
-      {% include footerbutton.html href='https://github.com/saahilh/' icon='fa-github' %}
-      {% include footerbutton.html href='https://stackoverflow.com/users/12380239/saahil-hamayun' icon='fa-stack-overflow' %}
+      {% include footerbutton.html icon='fa-envelope' href='mailto:saahil.hamayun@mail.mcgill.ca?Subject=Hello%20Saahil%21' %}
+      {% include footerbutton.html icon='fa-linkedin' href='https://www.linkedin.com/in/saahilh/' %}
+      {% include footerbutton.html icon='fa-github' href='https://github.com/saahilh/' %}
+      {% include footerbutton.html icon='fa-stack-overflow' href='https://stackoverflow.com/users/12380239/saahil-hamayun' %}
     </footer>
   </body>
 </html>
