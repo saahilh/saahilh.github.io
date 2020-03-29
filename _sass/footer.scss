@@ -7,6 +7,7 @@ footer {
 	a.btn {
 		@include cross-browser-transition(0.25s);
 		color: white;
+		padding: 20px 40px;
 	}
 
 	a.btn:hover, a.btn:active {
