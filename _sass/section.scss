@@ -1,6 +1,33 @@
+// Layout
+section {
+	display: grid;
+	grid-template-areas: 
+		"heading 			heading 				heading"
+		"left-gutter 	section-content right-gutter";
+	grid-template-columns: 1fr 10fr 1fr;
+	
+	.section-heading {
+		grid-area: heading;
+	}
+
+	.section-content {
+		grid-area: section-content;
+	}
+}
+
 section {
 	padding: 20px 0;
-	
+
+	&:nth-child(even) {
+		background-color: $bg-color-2;
+		color: $text-color-2;
+	}
+
+	&:nth-child(odd) {
+		background-color: $bg-color-1;
+		color: $text-color-1;
+	}
+
 	.section-heading {
 		text-decoration: underline;
 		text-decoration-color: $contrast-color;
@@ -10,16 +37,7 @@ section {
 	}
 
 	.section-content {
-		max-width: 50%;
+		max-width: 80%;
+		margin: auto;
 	}
-}
-
-section:nth-child(even) {
-	background-color: $bg-color-2;
-	color: $text-color-2;
-}
-
-section:nth-child(odd) {
-	background-color: $bg-color-1;
-	color: $text-color-1;
 }
