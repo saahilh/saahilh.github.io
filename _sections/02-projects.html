@@ -9,26 +9,21 @@ heading: Projects
 			{% if project.image_name %}
 				<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }}"/>
 			{% endif %}
-		<div class="description {% if project.image_name %}with-image{% endif %}">
+		<div class="description{% if project.image_name %} with-image{% endif %}">
 			<p>{{ project.description }}</p>
 			<p class="technologies">Technologies: {{ project.tech }}</p>
 			<div class="actions">
 				{% if project.github_url %}
-					<a class="btn btn-light" href="{{ project.github_url }}" target="_blank">
-						<i class="fa fa-github"> {{ project.name }}</i>
-					</a>
+					{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
 				{% endif %}
 				{% if project.try_url %}
-					<a class="btn btn-light" href="{{ project.try_url }}" target="_blank">
-						<i class="fa fa-external-link"> Try it out</i>
-					</a>
+					{% include iconbutton.html href=project.try_url text='Try it out' icon='fa-external-link' %}
+				{% endif %}
+				{% if project.image_name %}
+					{% assign image_href = '{{ base-url }}/assets/images/{{ project.image_name }}' %}
+					{% include iconbutton.html href=image_href text='View image' icon='fa-image' %}
 				{% endif %}
 			</div>
-			{% if project.image_name %}
-				<a class="btn btn-light" href="{{ base-url }}/assets/images/{{ project.image_name }}" target="_blank">
-					<i class="fa fa-image"> View image</i>
-				</a>
-			{% endif %}
 		</div>
 	</div>
 {% endfor %}
