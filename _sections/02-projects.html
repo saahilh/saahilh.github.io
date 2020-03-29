@@ -3,7 +3,7 @@ label: projects
 heading: Projects
 ---
 <div class="projects-container">
-{% for project in site.projects %}
+{% for project in site.data.projects %}
 	<div class="project">
 		{% if project.image_name %}
 			<h4>{{ project.name }}</h4>

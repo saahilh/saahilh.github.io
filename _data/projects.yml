@@ -1,0 +1,30 @@
+- name: GAMS
+  image_name: GAMS.png
+  description: Graduate Attribute Management System. Application used to analyze program achievement through student grades.
+  tech: Node.js, SQLite3, TypeScript
+
+- name: Classroom Friend
+  image_name: classroomfriend.png
+  description: Web tool for classroom communication.
+  tech: Ruby on Rails
+  github_url: https://github.com/saahilh/ClassroomFriend
+  try_url: http://classroom-friend.herokuapp.com/
+
+- name: RestoApp
+  image_name: resto-app.png
+  description: Application to manage restaurant layout, orders, and reservations.
+  tech: Spring Boot
+
+- name: Merch Manager
+  description: Application to manage products on your Shopify store. Project done while working at Modd Apps.
+  tech: Ruby on Rails
+
+- name: Car Dealership DSL
+  image_name: CDS.png
+  description: Domain specific language for car dealerships to manage inventory complete with IDE and transformation to Java.
+  tech: Xtext, Eclipse
+
+- name: TURN2URN
+  description: Full rework of code for the model-to-model transformation from Textual User Requirements Notation to User Requirements Notation.
+  github_url: https://github.com/JUCMNAV/TURNtoURN/tree/atlTransformationOptimization
+  tech: ATL transformation language, Eclipse
