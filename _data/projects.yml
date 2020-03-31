@@ -2,15 +2,15 @@
   image_name: GAMS.png
   description: Graduate Attribute Management System. Application used to analyze program achievement through student grades.
   techs: 
-    - node
-    - sqlite
-    - typescript
+    - Nodejs
+    - SQLite
+    - TypeScript
 
 - name: Classroom Friend
   image_name: classroomfriend.png
   description: Web tool for classroom communication.
   techs:
-    - rails
+    - Ruby on Rails
   github_url: https://github.com/saahilh/ClassroomFriend
   try_url: http://classroom-friend.herokuapp.com/
 
@@ -18,12 +18,12 @@
   image_name: resto-app.png
   description: Application to manage restaurant layout, orders, and reservations.
   techs:
-    - java-spring
+    - Java Spring
 
 - name: Merch Manager
   description: Application to manage products on your Shopify store. Project done while working at Modd Apps.
   techs:
-    - rails
+    - Ruby on Rails
 
 - name: Car Dealership DSL
   image_name: CDS.png

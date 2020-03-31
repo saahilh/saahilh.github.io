@@ -1,5 +1,2 @@
-{% if tech == 'node' or tech == 'rails' or tech == 'typescript' or tech == 'sqlite' or tech == 'java-spring' %}
-  <img class="tech {{ tech }}" src="{{ site.baseurl }}/assets/images/{{ tech }}-logo.svg">
-{% else %}
-  {{ tech }}
-{% endif %}
+{% assign formatted_tech = tech | downcase | replace: " ", "-" %}
+<img class="tech {{ formatted_tech }}" src="{{ site.baseurl }}/assets/images/{{ formatted_tech }}-logo.svg" alt="{{ formatted_tech }}">
