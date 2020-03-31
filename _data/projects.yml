@@ -18,7 +18,7 @@
   image_name: resto-app.png
   description: Application to manage restaurant layout, orders, and reservations.
   techs:
-    - Spring Boot
+    - java-spring
 
 - name: Merch Manager
   description: Application to manage products on your Shopify store. Project done while working at Modd Apps.
