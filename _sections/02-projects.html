@@ -7,9 +7,6 @@ heading: Projects
 	<div class="project">
 		<div class="header">
 			<h4>{{ project.name }}</h4>
-			{% for tech in project.techs %}
-				{% include tech.html tech=tech %}
-			{% endfor %}
 		</div>
 
 		{% if project.image_name %}
@@ -30,6 +27,12 @@ heading: Projects
 					{% include iconbutton.html href=image_href text='View image' icon='fa-image' %}
 				{% endif %}
 			</div>
+		</div>
+
+		<div class="project-footer">
+			{% for tech in project.techs %}
+				{% include tech.html tech=tech %}
+			{% endfor %}
 		</div>
 	</div>
 {% endfor %}
