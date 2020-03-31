@@ -16,15 +16,7 @@
   
   <body>
     <header>
-      <img class="profile-picture" src="{{ site.baseurl }}/assets/images/profile.png" alt="Profile Picture"/>
-      <h1 class="profile-name">Saahil Hamayun</h1>
-      
-      <div class="header-buttons">
-        {% include headerbutton.html icon='fa-envelope' href='mailto:saahil.hamayun@mail.mcgill.ca?Subject=Hello%20Saahil%21' %}
-        {% include headerbutton.html icon='fa-linkedin' href='https://www.linkedin.com/in/saahilh/' %}
-        {% include headerbutton.html icon='fa-github' href='https://github.com/saahilh/' %}
-        {% include headerbutton.html icon='fa-stack-overflow' href='https://stackoverflow.com/users/12380239/saahil-hamayun' %}
-      </div>
+      {% include header.html %}
     </header>
     
     {% for section in site.sections %}
