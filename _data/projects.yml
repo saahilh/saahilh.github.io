@@ -4,7 +4,7 @@
   techs: 
     - node
     - SQLite3
-    - TypeScript
+    - typescript
 
 - name: Classroom Friend
   image_name: classroomfriend.png
