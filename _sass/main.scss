@@ -29,15 +29,7 @@ html {
 @import "header";
 @import "section";
 
-.about .section-content {
-	display: grid;
-	grid-template-columns: 2fr [about-content] 6fr 2fr;
-
-	p {
-		grid-column: about-content;
-	}
-}
-
+@import "about";
 @import "project";
 
 @media screen and (max-width: 575px) {}
