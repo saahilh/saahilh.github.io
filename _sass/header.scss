@@ -17,4 +17,28 @@ header {
 		color: $contrast-color;
 		font-weight: bold;
 	}
+
+	.header-buttons {
+		background-color: darkgrey;
+		color: white;
+		margin: auto;
+
+		width: 470px;
+		border-radius: 15px;
+
+		a.btn {
+			@include cross-browser-transition(0.25s);
+			color: white;
+			padding: 20px 40px;
+			border-radius: 0;
+		}
+
+		a.btn:hover, a.btn:active {
+			background-color: $contrast-color; 
+		}
+
+		.btn i {
+			font-size: 1.5em;
+		}
+	}
 }

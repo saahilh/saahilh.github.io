@@ -18,6 +18,13 @@
     <header>
       <img class="profile-picture" src="{{ site.baseurl }}/assets/images/profile.png" alt="Profile Picture"/>
       <h1 class="profile-name">Saahil Hamayun</h1>
+      
+      <div class="header-buttons">
+        {% include headerbutton.html icon='fa-envelope' href='mailto:saahil.hamayun@mail.mcgill.ca?Subject=Hello%20Saahil%21' %}
+        {% include headerbutton.html icon='fa-linkedin' href='https://www.linkedin.com/in/saahilh/' %}
+        {% include headerbutton.html icon='fa-github' href='https://github.com/saahilh/' %}
+        {% include headerbutton.html icon='fa-stack-overflow' href='https://stackoverflow.com/users/12380239/saahil-hamayun' %}
+      </div>
     </header>
     
     {% for section in site.sections %}
@@ -26,12 +33,5 @@
         <div class="section-content">{{ section.content}}</div>
       </section>
     {% endfor %}
-
-    <footer>
-      {% include footerbutton.html icon='fa-envelope' href='mailto:saahil.hamayun@mail.mcgill.ca?Subject=Hello%20Saahil%21' %}
-      {% include footerbutton.html icon='fa-linkedin' href='https://www.linkedin.com/in/saahilh/' %}
-      {% include footerbutton.html icon='fa-github' href='https://github.com/saahilh/' %}
-      {% include footerbutton.html icon='fa-stack-overflow' href='https://stackoverflow.com/users/12380239/saahil-hamayun' %}
-    </footer>
   </body>
 </html>
