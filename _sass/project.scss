@@ -18,13 +18,22 @@
 
 	border-radius: 10px;
 
-	h4 {
-		color: $contrast-color;
-		text-transform: uppercase;
+	.header {
 		padding: 10px;
+		display: flex;
+		
+		h4 {
+			color: $contrast-color;
+			text-transform: uppercase;
+		}
+
+		.tech {
+			width: 50px;
+			margin: 5px;
+		}
 	}
 
-	img {
+	.project-image {
 		display: none;
 	}
 
@@ -55,7 +64,7 @@
 
 @media (pointer: fine) {
 	.project {
-		img {
+		.project-image {
 			display: block;
 			max-height: 70%;
 			height: auto;
@@ -80,7 +89,7 @@
 	}
 
 	.project:hover {
-		img {
+		.project-image {
 			opacity: 0;
 			transform: scale(1.1);
 		}

@@ -1,0 +1,5 @@
+{% if tech == 'node' or tech == 'rails' %}
+  <img class="tech {{ tech }}" src="{{ site.baseurl }}/assets/images/{{ tech }}-logo.svg">
+{% else %}
+  {{ tech }}
+{% endif %}

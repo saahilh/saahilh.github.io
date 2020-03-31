@@ -5,13 +5,19 @@ heading: Projects
 <div class="projects-container">
 {% for project in site.data.projects %}
 	<div class="project">
-		<h4>{{ project.name }}</h4>
-			{% if project.image_name %}
-				<img src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }}"/>
-			{% endif %}
+		<div class="header">
+			<h4>{{ project.name }}</h4>
+			{% for tech in project.techs %}
+				{% include tech.html tech=tech %}
+			{% endfor %}
+		</div>
+
+		{% if project.image_name %}
+			<img class="project-image" src="{{ base-url }}/assets/images/{{ project.image_name }}" alt="{{ project.name }}"/>
+		{% endif %}
+
 		<div class="description{% if project.image_name %} with-image{% endif %}">
 			<p>{{ project.description }}</p>
-			<p class="technologies">Technologies: {{ project.tech }}</p>
 			<div class="actions">
 				{% if project.github_url %}
 					{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
