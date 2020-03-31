@@ -3,7 +3,7 @@
   description: Graduate Attribute Management System. Application used to analyze program achievement through student grades.
   techs: 
     - node
-    - SQLite3
+    - sqlite
     - typescript
 
 - name: Classroom Friend
