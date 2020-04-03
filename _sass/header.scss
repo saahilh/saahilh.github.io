@@ -23,15 +23,16 @@ header {
 
 	.profile-name {
 		color: $contrast-color;
+		font-size: 3em;
 		font-weight: bold;
 	}
 
 	.profile-social {
-		background-color: darkgrey;
+		background-color: rgba(100, 100, 100, 0.3);
 		color: white;
 		margin: auto;
 
-		width: 470px;
+		width: 550px;
 		border-radius: 15px;
 
 		a.btn {
@@ -46,7 +47,7 @@ header {
 		}
 
 		.btn i {
-			font-size: 1.5em;
+			font-size: 2.5em;
 		}
 	}
 }
