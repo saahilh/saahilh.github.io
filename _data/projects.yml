@@ -5,7 +5,7 @@
     Uses React.js on the frontend.
   try_url: http://www.nextpine.com
   techs: 
-    - Nodejs
+    - Node
     - React
 
 - name: Jsx Lite
@@ -36,7 +36,7 @@
     The engineering department at McGill University has been using it as a part of their program analysis
     procedures to ensure they remain accredited by the Canadian Engineering Accreditation Board.
   techs: 
-    - Nodejs
+    - Node
     - SQLite
     - TypeScript
 
