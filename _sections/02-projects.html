@@ -13,9 +13,9 @@ heading: Recent Projects
 			{% if project.image_name %}
 				<img class="project-image" src="{{ base-url }}/assets/images/project-pictures/{{ project.image_name }}" alt="{{ project.name }}"/>
 			{% endif %}
-
 			<div class="description">
 				<p>{{ project.description }}</p>
+				<p>Technologies used: {{ project.techs | join: ", " }}</p>
 				<div class="actions">
 					{% if project.github_url %}
 						{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
