@@ -30,8 +30,9 @@
     - TypeScript
 
 - name: Classroom Friend
-  image_name: classroomfriend.png
-  description: Web tool for classroom communication.
+  description: 
+    ClassroomFriend is a Rails-based Websocket webtool to complement lectures by providing
+    a convenient medium for question-asking. It is currently hosted on Heroku.
   techs:
     - Ruby on Rails
   github_url: https://github.com/saahilh/ClassroomFriend
