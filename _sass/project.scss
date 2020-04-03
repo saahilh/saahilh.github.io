@@ -18,7 +18,7 @@
 
 	border-radius: 10px;
 
-	.header {
+	.project-header {
 		padding: 10px;
 		
 		h4 {
@@ -84,18 +84,14 @@
 
 // Fade-in / fade-out effect for project panels.
 // This media query attempts to exclude touch screen devices.
-
 @media (pointer: fine) {
-	.project {
+	.project-contents {
 		.project-image {
 			display: block;
 			max-height: 70%;
 			height: auto;
 			width: 90%;
 			margin: auto;
-		}
-
-		> * {
 			@include cross-browser-transition(0.75s ease);
 		}
 
@@ -104,21 +100,26 @@
 			top: 50%;
 			left: 50%;
 			@include cross-browser-transform(translate(-50%, -50%));
+			@include cross-browser-transition(0.75s ease);
 		}
 
 		img ~ .description {	
 			opacity: 0;
-		}
-	}
 
-	.project:hover {
-		.project-image {
-			opacity: 0;
-			transform: scale(1.1);
+			&:hover {
+				opacity: 1;
+			}
 		}
 
-		img ~ .description {
-			opacity: 1;
+		&:hover {
+			.project-image {
+				opacity: 0;
+				transform: scale(1.1);
+			}
+	
+			img ~ .description {
+				opacity: 1;
+			}
 		}
 	}
 }

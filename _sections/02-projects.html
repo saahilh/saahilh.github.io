@@ -5,27 +5,29 @@ heading: Projects
 <div class="projects-container">
 {% for project in site.data.projects %}
 	<div class="project">
-		<div class="header">
+		<div class="project-header">
 			<h4>{{ project.name }}</h4>
 		</div>
 
-		{% if project.image_name %}
-			<img class="project-image" src="{{ base-url }}/assets/images/project-pictures/{{ project.image_name }}" alt="{{ project.name }}"/>
-		{% endif %}
+		<div class="project-contents">
+			{% if project.image_name %}
+				<img class="project-image" src="{{ base-url }}/assets/images/project-pictures/{{ project.image_name }}" alt="{{ project.name }}"/>
+			{% endif %}
 
-		<div class="description">
-			<p>{{ project.description }}</p>
-			<div class="actions">
-				{% if project.github_url %}
-					{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
-				{% endif %}
-				{% if project.try_url %}
-					{% include iconbutton.html href=project.try_url text='Try it out' icon='fa-external-link' %}
-				{% endif %}
-				{% if project.image_name %}
-					{% assign image_href = '{{ base-url }}/assets/images/{{ project.image_name }}' %}
-					{% include iconbutton.html href=image_href text='View image' icon='fa-image' %}
-				{% endif %}
+			<div class="description">
+				<p>{{ project.description }}</p>
+				<div class="actions">
+					{% if project.github_url %}
+						{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
+					{% endif %}
+					{% if project.try_url %}
+						{% include iconbutton.html href=project.try_url text='Try it out' icon='fa-external-link' %}
+					{% endif %}
+					{% if project.image_name %}
+						{% assign image_href = '{{ base-url }}/assets/images/{{ project.image_name }}' %}
+						{% include iconbutton.html href=image_href text='View image' icon='fa-image' %}
+					{% endif %}
+				</div>
 			</div>
 		</div>
 
