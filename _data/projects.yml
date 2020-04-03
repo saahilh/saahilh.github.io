@@ -4,6 +4,9 @@
     Uses Node.js with Express.js in the backend to provide a REST API and an interface to the Slack API.
     Uses React.js on the frontend.
   try_url: http://www.nextpine.com
+  techs: 
+    - Nodejs
+    - React
 
 - name: Jsx Lite
   description:
@@ -12,6 +15,8 @@
     For now, this uses plugin-transform-react-jsx to handle conversions from jsx to method calls.
     So in the transformation of jsx -> js -> html, I am currently working on the js -> html step.
   github_url: https://github.com/saahilh/jsx-lite
+  techs:
+    - Babel
 
 - name: Tetris
   description:
@@ -22,6 +27,8 @@
     basics of React.
   github_url: https://github.com/saahilh/tetris
   try_url: http://tetrisrh.herokuapp.com/
+  techs: 
+    - React
 
 - name: GAMS
   description: 
@@ -41,10 +48,3 @@
     - Ruby on Rails
   github_url: https://github.com/saahilh/ClassroomFriend
   try_url: http://classroom-friend.herokuapp.com/
-
-- name: TURN2URN
-  description: Full rework of code for the model-to-model transformation from Textual User Requirements Notation to User Requirements Notation.
-  github_url: https://github.com/JUCMNAV/TURNtoURN/tree/atlTransformationOptimization
-  techs:
-    - ATL transformation language
-    - Eclipse
