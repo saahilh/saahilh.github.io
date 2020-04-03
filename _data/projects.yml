@@ -1,3 +1,7 @@
+- name: Jsx Lite
+  description: A babel-based tool that will serve as a lightweight transpiler from jsx to html.
+  github_url: https://github.com/saahilh/jsx-lite
+
 - name: GAMS
   image_name: GAMS.png
   description: Graduate Attribute Management System. Application used to analyze program achievement through student grades.
