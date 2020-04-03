@@ -3,11 +3,19 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 
-	text-align: center;
-	padding: 50px 0;
-	
+	height: 100vh;
+
+	.profile{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		@include cross-browser-transform(translate(-50%, -15%));
+
+		text-align: center;
+	}
+
 	.profile-picture {
-		max-width: 200px;
+		max-width: 300px;
 		border-radius: 15%;
 		height: auto;
 		padding: 0.25rem;
@@ -18,7 +26,7 @@ header {
 		font-weight: bold;
 	}
 
-	.header-buttons {
+	.profile-social {
 		background-color: darkgrey;
 		color: white;
 		margin: auto;
