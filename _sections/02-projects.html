@@ -20,6 +20,10 @@ heading: Recent Projects
 					{% if project.github_url %}
 						{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
 					{% endif %}
+					{% unless project.github_url %}
+						{% include iconbutton.html text="(private)" icon='fa-github' %}
+					{% endunless %}
+
 					{% if project.try_url %}
 						{% include iconbutton.html href=project.try_url text='Try it out' icon='fa-external-link' %}
 					{% endif %}

@@ -1,3 +1,9 @@
-<a class="btn btn-light" href="{{ include.href }}" target="_blank">
-  <i class="fa {{ include.icon }}"> {{ include.text }}</i>
-</a>
+{% if include.href %}
+  <a class="btn btn-light" href="{{ include.href }}" target="_blank">
+    <i class="fa {{ include.icon }}"> {{ include.text }}</i>
+  </a>
+{% else %}
+  <a class="btn btn-dark disabled" target="_blank">
+    <i class="fa {{ include.icon }}"> {{ include.text }}</i>
+  </a>
+{% endif %}
