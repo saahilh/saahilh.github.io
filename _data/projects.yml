@@ -6,7 +6,11 @@
   try_url: http://www.nextpine.com
 
 - name: Jsx Lite
-  description: A babel-based tool that will serve as a lightweight transpiler from jsx to html.
+  description:
+    A babel-based tool that will serve as a lightweight transpiler from jsx to html.
+    I wanted to try going from jsx to HTML in an effort to learn how to make DSLs using JavaScript.
+    For now, this uses plugin-transform-react-jsx to handle conversions from jsx to method calls.
+    So in the transformation of jsx -> js -> html, I am currently working on the js -> html step.
   github_url: https://github.com/saahilh/jsx-lite
 
 - name: Tetris
