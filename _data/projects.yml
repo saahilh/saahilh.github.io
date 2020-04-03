@@ -37,8 +37,8 @@
     procedures to ensure they remain accredited by the Canadian Engineering Accreditation Board.
   techs: 
     - Node
-    - SQLite
     - TypeScript
+    - SQLite
 
 - name: Classroom Friend
   description: 
