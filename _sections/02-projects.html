@@ -13,7 +13,7 @@ heading: Recent Projects
 			<div class="description center">
 				<p>{{ project.description }}</p>
 				<p>Technologies used: {{ project.techs | join: ", " }}</p>
-				<div class="actions">
+				<div class="actions bottom-left">
 					{% if project.github_url %}
 						{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
 					{% endif %}
@@ -32,7 +32,7 @@ heading: Recent Projects
 			</div>
 		</div>
 
-		<div class="project-footer">
+		<div class="project-footer bottom-left">
 			{% for tech in project.techs %}
 				{% include tech.html tech=tech %}
 			{% endfor %}
