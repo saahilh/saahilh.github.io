@@ -15,18 +15,18 @@ heading: Recent Projects
 				<p>Technologies used: {{ project.techs | join: ", " }}</p>
 				<div class="actions bottom-left">
 					{% if project.github_url %}
-						{% include iconbutton.html href=project.github_url text=project.name icon='fa-github' %}
+						{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
 					{% endif %}
 					{% unless project.github_url %}
-						{% include iconbutton.html text="(private)" icon='fa-github' %}
+						{% include icon_button.html text="(private)" icon='fa-github' %}
 					{% endunless %}
 
 					{% if project.try_url %}
-						{% include iconbutton.html href=project.try_url text='Try it out' icon='fa-external-link' %}
+						{% include icon_button.html href=project.try_url text='Try it out' icon='fa-external-link' %}
 					{% endif %}
 					{% if project.image_name %}
 						{% assign image_href = '{{ base-url }}/assets/images/{{ project.image_name }}' %}
-						{% include iconbutton.html href=image_href text='View image' icon='fa-image' %}
+						{% include icon_button.html href=image_href text='View image' icon='fa-image' %}
 					{% endif %}
 				</div>
 			</div>
