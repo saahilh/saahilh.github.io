@@ -10,9 +10,6 @@ heading: Recent Projects
 		</div>
 
 		<div class="project-contents">
-			{% if project.image_name %}
-				<img class="project-image" src="{{ base-url }}/assets/images/project-pictures/{{ project.image_name }}" alt="{{ project.name }}"/>
-			{% endif %}
 			<div class="description">
 				<p>{{ project.description }}</p>
 				<p>Technologies used: {{ project.techs | join: ", " }}</p>
