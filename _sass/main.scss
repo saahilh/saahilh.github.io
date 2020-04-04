@@ -26,6 +26,13 @@ html {
 	font-size: 16px;
 }
 
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include cross-browser-transform(translate(-50%, -50%));
+}
+
 @import "header";
 @import "section";
 
