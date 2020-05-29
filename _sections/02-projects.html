@@ -24,6 +24,10 @@ heading: Recent Projects
 					{% if project.try_url %}
 						{% include icon_button.html href=project.try_url text='Try it out' icon='fa-external-link' %}
 					{% endif %}
+					{% unless project.try_url %}
+						{% include icon_button.html text="(unavailable)" icon='fa-external-link' %}
+					{% endunless %}
+
 					{% if project.image_name %}
 						{% assign image_href = '{{ base-url }}/assets/images/{{ project.image_name }}' %}
 						{% include icon_button.html href=image_href text='View image' icon='fa-image' %}
