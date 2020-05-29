@@ -1,9 +1,8 @@
 - name: NextPine
   description: 
-    A tool used for managing project tasks and timelines.
+    An in-house tool used for managing project tasks and timelines.
     Uses Node.js with Express.js in the backend to provide a REST API and an interface to the Slack API.
     Uses React.js on the frontend.
-  try_url: http://www.nextpine.com
   techs: 
     - Node
     - React
