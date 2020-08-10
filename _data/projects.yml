@@ -7,44 +7,36 @@
     - Node
     - React
 
-- name: Jsx Lite
-  description:
-    A babel-based tool that will serve as a lightweight transpiler from jsx to html.
-    I wanted to try going from jsx to HTML in an effort to learn how to make DSLs using JavaScript.
-    For now, this uses plugin-transform-react-jsx to handle conversions from jsx to method calls.
-    So in the transformation of jsx -> js -> html, I am currently working on the js -> html step.
-  github_url: https://github.com/saahilh/jsx-lite
-  techs:
-    - Babel
-
-- name: Tetris
-  description:
-    An implementation of Tetris I created using React.js.
-    I wanted to challenge myself so I went at it without
-    looking at how people implemented the game, though I
-    did use the React 'Todo List' tutorial to learn the 
-    basics of React.
-  github_url: https://github.com/saahilh/tetris
-  try_url: http://tetrisrh.herokuapp.com/
-  techs: 
-    - React
-
 - name: GAMS
   description: 
-    The Graduate Attribute Management System (GAMS) is an application that I implemented with a friend.
-    The engineering department at McGill University has been using it as a part of their program analysis
-    procedures to ensure they remain accredited by the Canadian Engineering Accreditation Board.
+    Graduate Attribute Management System. An application I created with a fellow McGill student which is now used by the engineering department at McGill during program accreditation analysis.
   techs: 
     - Node
     - TypeScript
     - SQLite
 
+- name: Jsx Lite
+  description:
+    A lightweight babel-based jsx-to-html transpiler with a custom implementation of the js-to-html step.
+    This project is a self-instructive effort in making DSLs using JavaScript.
+  github_url: https://github.com/saahilh/jsx-lite
+  techs:
+    - Babel
+
 - name: Classroom Friend
   description: 
-    ClassroomFriend is a Rails-based Websocket webtool to complement lectures by providing
+    A Rails-based Websocket webtool to complement lectures by providing
     a convenient medium for question-asking. It is currently hosted on Heroku.
   techs:
     - Ruby on Rails
     - jQuery
   github_url: https://github.com/saahilh/ClassroomFriend
   try_url: http://classroom-friend.herokuapp.com/
+
+- name: Tetris
+  description:
+    An implementation of Tetris I created in my spare time in an effort to learn React.
+  github_url: https://github.com/saahilh/tetris
+  try_url: http://tetrisrh.herokuapp.com/
+  techs: 
+    - React

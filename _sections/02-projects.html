@@ -6,40 +6,28 @@ heading: Recent Projects
 {% for project in site.data.projects %}
 	<div class="project">
 		<div class="project-header">
-			<h4>{{ project.name }}</h4>
+			<h4>
+				{{ project.name }}
+			</h4>
+			<span class="pull-right">
+				{% if project.github_url %}
+					{% include icon_button.html href=project.github_url icon='fa-github' %}
+				{% endif %}
+				{% if project.try_url %}
+					{% include icon_button.html href=project.try_url text='Try' icon='fa-external-link' %}
+				{% endif %}
+			</span>
 		</div>
 
 		<div class="project-contents">
-			<div class="description center">
+			<div class="description">
 				<p>{{ project.description }}</p>
-				<p>Technologies used: {{ project.techs | join: ", " }}</p>
-				<div class="actions bottom-left">
-					{% if project.github_url %}
-						{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
-					{% endif %}
-					{% unless project.github_url %}
-						{% include icon_button.html text="(private)" icon='fa-github' %}
-					{% endunless %}
-
-					{% if project.try_url %}
-						{% include icon_button.html href=project.try_url text='Try it out' icon='fa-external-link' %}
-					{% endif %}
-					{% unless project.try_url %}
-						{% include icon_button.html text="(unavailable)" icon='fa-external-link' %}
-					{% endunless %}
-
-					{% if project.image_name %}
-						{% assign image_href = '{{ base-url }}/assets/images/{{ project.image_name }}' %}
-						{% include icon_button.html href=image_href text='View image' icon='fa-image' %}
-					{% endif %}
+				<div class="techs">
+					{% for tech in project.techs %}
+						{% include tech.html tech=tech %}
+					{% endfor %}
 				</div>
 			</div>
-		</div>
-
-		<div class="project-footer bottom-left">
-			{% for tech in project.techs %}
-				{% include tech.html tech=tech %}
-			{% endfor %}
 		</div>
 	</div>
 {% endfor %}
