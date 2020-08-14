@@ -1,8 +1,0 @@
-.about .section-content {
-	display: grid;
-	grid-template-columns: 2fr [about-content] 6fr 2fr;
-
-	p {
-		grid-column: about-content;
-	}
-}

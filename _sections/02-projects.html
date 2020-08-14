@@ -9,19 +9,18 @@ heading: Recent Projects
 			<h4>
 				{{ project.name }}
 			</h4>
-			<span class="pull-right">
-				{% if project.github_url %}
-					{% include icon_button.html href=project.github_url icon='fa-github' %}
-				{% endif %}
-				{% if project.try_url %}
-					{% include icon_button.html href=project.try_url text='Try' icon='fa-external-link' %}
-				{% endif %}
-			</span>
 		</div>
-
 		<div class="project-contents">
 			<div class="description">
 				<p>{{ project.description }}</p>
+				<p class="center-text">
+					{% if project.github_url %}
+						{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
+					{% endif %}
+					{% if project.try_url %}
+						{% include icon_button.html href=project.try_url text='Try' icon='fa-external-link' %}
+					{% endif %}
+				</p>
 				<div class="techs">
 					{% for tech in project.techs %}
 						{% include tech.html tech=tech %}

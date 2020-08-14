@@ -8,10 +8,10 @@ $text-color-2: black;
 
 @mixin cross-browser-transition($transition) {
 	-o-transition: $transition;
-  -ms-transition: $transition;
-  -moz-transition: $transition;
-  -webkit-transition: $transition;
-  transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
 }
 
 @mixin cross-browser-transform($transform) {
@@ -33,6 +33,10 @@ html {
 	@include cross-browser-transform(translate(-50%, -50%));
 }
 
+.center-text {
+	text-align: center;
+}
+
 .bottom-left {
 	position: absolute;
 
@@ -43,16 +47,51 @@ html {
 
 @import "header";
 @import "section";
-
-@import "about";
 @import "project";
 
 @media screen and (max-width: 575px) {}
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+	.project {
+		min-width: 70vw;
+	}
+
+	header {
+		min-height: max(150vw, 150vh);
+	}
+
+	.profile {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		@include cross-browser-transform(translate(-50%, -50%));
+	}
+}
+
+header {
+	min-height: min(150vw, 150vh);
+}
+
+@media (min-width: 767px) {
+	.about .section-content {
+		display: grid;
+		grid-template-columns: 2fr [about-content] 6fr 2fr;
+	
+		p {
+			grid-column: about-content;
+		}
+	}
+}
 
 @media screen and (max-width: 991px) {}
 
-@media screen and (max-width: 1139px) {}
+@media screen and (max-width: 1139px) {
+	.profile {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		@include cross-browser-transform(translate(-50%, -50%));
+	}
+}
 
 @media screen and (min-width: 1140px) {}
