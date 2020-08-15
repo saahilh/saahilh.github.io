@@ -6,6 +6,7 @@
   techs: 
     - Node
     - React
+  try_url: https://www.luxpmsoft.com/nextpine.html
 
 - name: GAMS
   description: 
