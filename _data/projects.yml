@@ -27,7 +27,7 @@
 - name: Classroom Friend
   description: 
     A Rails-based Websocket webtool to complement lectures by providing
-    a convenient medium for question-asking. It is currently hosted on Heroku.
+    a convenient medium for question-asking.
   techs:
     - Ruby on Rails
     - jQuery
@@ -36,7 +36,7 @@
 
 - name: Tetris
   description:
-    An implementation of Tetris I created in my spare time in an effort to learn React.
+    An implementation of Tetris I created in my spare time over a year ago in an initial effort to learn React.
   github_url: https://github.com/saahilh/tetris
   try_url: http://tetrisrh.herokuapp.com/
   techs: 
