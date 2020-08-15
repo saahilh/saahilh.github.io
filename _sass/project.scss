@@ -4,10 +4,20 @@
 	align-content: space-around;
 }
 
+.btn-dark {
+	background-color: $contrast-color;
+	border: none;
+}
+
 .project {
 	min-width: 30vw;
 	max-width: 40vw;
 	margin: 13px auto;
+
+	.buttons {
+		padding-top: 10px;
+		text-align: center;
+	}
 
 	.project-header {
 		padding: 15px 20px;
@@ -52,7 +62,7 @@
 		border-radius: 5px;
 	
 		color: black; // for fallback font
-		background-color: rgba(255, 255, 255, 1);
+		background-color: white;
 	
 		&.node {
 			background-color: #333;

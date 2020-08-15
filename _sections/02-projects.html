@@ -13,7 +13,12 @@ heading: Recent Projects
 		<div class="project-contents">
 			<div class="description">
 				<p>{{ project.description }}</p>
-				<p class="center-text">
+				<div class="techs">
+					{% for tech in project.techs %}
+						{% include tech.html tech=tech %}
+					{% endfor %}
+				</div>
+				<p class="buttons">
 					{% if project.github_url %}
 						{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
 					{% endif %}
@@ -21,11 +26,6 @@ heading: Recent Projects
 						{% include icon_button.html href=project.try_url text='Try' icon='fa-external-link' %}
 					{% endif %}
 				</p>
-				<div class="techs">
-					{% for tech in project.techs %}
-						{% include tech.html tech=tech %}
-					{% endfor %}
-				</div>
 			</div>
 		</div>
 	</div>
