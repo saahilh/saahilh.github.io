@@ -16,6 +16,14 @@
     - TypeScript
     - SQLite
 
+- name: Tetris
+  description:
+    An implementation of Tetris I created using React.js. I occasionally update it after inspiration from discussions with my brother.
+  github_url: https://github.com/saahilh/tetris
+  try_url: http://tetris.saahilhamayun.com
+  techs: 
+    - React
+
 - name: Jsx Lite
   description:
     A lightweight babel-based jsx-to-html transpiler with a custom implementation of the js-to-html step.
@@ -32,12 +40,4 @@
     - Ruby on Rails
     - jQuery
   github_url: https://github.com/saahilh/ClassroomFriend
-  try_url: http://classroom-friend.herokuapp.com/
-
-- name: Tetris
-  description:
-    An implementation of Tetris I created in my spare time over a year ago in an initial effort to learn React.
-  github_url: https://github.com/saahilh/tetris
-  try_url: http://tetrisrh.herokuapp.com/
-  techs: 
-    - React
+  try_url: http://cf.saahilhamayun.com
