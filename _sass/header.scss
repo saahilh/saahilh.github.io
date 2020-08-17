@@ -30,13 +30,13 @@ header {
 		margin: auto;
 
 		max-width: 75vw;
-		width: 675px;
+		width: 475px;
 		border-radius: 15px;
 
 		a.btn {
 			@include cross-browser-transition(0.25s);
 			color: white;
-			padding: 20px 40px;
+			padding: 10px 20px;
 			border-radius: 0;
 		}
 
