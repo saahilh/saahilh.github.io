@@ -19,12 +19,8 @@ heading: Recent Projects
 					{% endfor %}
 				</div>
 				<p class="buttons">
-					{% if project.github_url %}
-						{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
-					{% endif %}
-					{% if project.try_url %}
-						{% include icon_button.html href=project.try_url text='Visit' icon='fa-external-link' %}
-					{% endif %}
+					{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
+					{% include icon_button.html href=project.try_url text='Visit' icon='fa-external-link' %}
 				</p>
 			</div>
 		</div>
