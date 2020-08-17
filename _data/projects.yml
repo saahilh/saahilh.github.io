@@ -31,8 +31,7 @@
 
 - name: Classroom Friend
   description: 
-    I created a Rails-based Websocket webtool to complement lectures by providing
-    a convenient medium for question-asking.
+    I created a webtool to help break communication barriers within the classroom.
   techs:
     - Ruby on Rails
     - jQuery
