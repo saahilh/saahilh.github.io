@@ -55,21 +55,6 @@ html {
 	.project {
 		min-width: 70vw;
 	}
-
-	header {
-		min-height: max(150vw, 150vh);
-	}
-
-	.profile {
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		@include cross-browser-transform(translate(-50%, -50%));
-	}
-}
-
-header {
-	min-height: min(150vw, 150vh);
 }
 
 @media (min-width: 767px) {
@@ -85,13 +70,6 @@ header {
 
 @media screen and (max-width: 991px) {}
 
-@media screen and (max-width: 1139px) {
-	.profile {
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		@include cross-browser-transform(translate(-50%, -50%));
-	}
-}
+@media screen and (max-width: 1139px) {}
 
 @media screen and (min-width: 1140px) {}

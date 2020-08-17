@@ -3,14 +3,15 @@ header {
 	background-attachment: fixed;
 	background-size: cover;
 
-	height: 150vh;
+	height: max-content;
+	padding: 50px;
 
 	.profile{
 		text-align: center;
 	}
 
 	.profile-picture {
-		max-width: 300px;
+		max-width: min(70vw, 300px);
 		border-radius: 15%;
 		height: auto;
 		padding: 0.25rem;
