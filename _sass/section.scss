@@ -1,19 +1,19 @@
+#about {
+	background-color: $bg-color-2;
+	color: $text-color-2;
+}
+
+#projects {
+	background-color: $bg-color-1;
+	color: $text-color-1;
+}
+
 section {
 	padding: 20px 0;
 	
 	@media screen and (min-width: $screen-width-sm) {
 		display: grid;
 		grid-template-rows: 1fr;
-	}
-	
-	&:nth-child(even) {
-		background-color: $bg-color-2;
-		color: $text-color-2;
-	}
-
-	&:nth-child(odd) {
-		background-color: $bg-color-1;
-		color: $text-color-1;
 	}
 
 	.section-heading {

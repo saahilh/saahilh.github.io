@@ -28,7 +28,7 @@
     </header>
     
     {% for section in site.sections %}
-      <section aria-label="{{ section.label }}" class="{{ section.label }}">
+      <section id="{{ section.label }}" aria-label="{{ section.label }}" class="{{ section.label }}">
         <h2 class="section-heading center-text">{{ section.heading }}</h2>
         <div class="section-content">{{ section.content}}</div>
       </section>
