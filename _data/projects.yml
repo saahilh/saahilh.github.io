@@ -31,7 +31,7 @@
 
 - name: Classroom Friend
   description: 
-    I created a webtool to help break communication barriers within the classroom.
+    I made a webtool to help break communication barriers within the classroom.
   logos:
     - Ruby on Rails
     - jQuery
