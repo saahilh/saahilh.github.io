@@ -1,20 +1,3 @@
-// Layout
-section {
-	display: grid;
-	grid-template-areas: 
-		"heading 			heading 				heading"
-		"left-gutter 	section-content right-gutter";
-	grid-template-columns: 1fr 10fr 1fr;
-	
-	.section-heading {
-		grid-area: heading;
-	}
-
-	.section-content {
-		grid-area: section-content;
-	}
-}
-
 section {
 	padding: 20px 0;
 
