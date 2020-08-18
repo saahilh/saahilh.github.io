@@ -62,8 +62,7 @@ html {
 		display: grid;
 		grid-template-areas: 
 			"heading 			heading 				heading"
-			"left-gutter 	section-content right-gutter";
-		grid-template-columns: 1fr 10fr 1fr;
+			"section-content 	section-content section-content";
 		
 		.section-heading {
 			grid-area: heading;
@@ -76,15 +75,8 @@ html {
 }
 
 @media screen and (min-width: 991px) {
-	// Layout
-	.about .section-content {
-		display: grid;
-		grid-template-columns: 2fr [about-content] 6fr 2fr;
-	
-		p {
-			grid-column: about-content;
-			max-width: 800px;
-		}
+	.about p {
+		max-width: 700px;
 	}
 }
 
@@ -117,5 +109,9 @@ html {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
+	}
+
+	section .section-content {
+		max-width: 100%;
 	}
 }
