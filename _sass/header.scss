@@ -6,10 +6,6 @@ header {
 	height: max-content;
 	padding: 50px;
 
-	.profile {
-		text-align: center;
-	}
-	
 	.profile-picture, .profile-social {
 		max-width: min(70vw, 300px);
 		@media screen and (min-width: $screen-width-lg) {
