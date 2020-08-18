@@ -7,9 +7,9 @@ header {
 	padding: 50px;
 
 	.profile-social, .profile-picture {
-		max-width: min(70vw, 250px);
+		max-width: min(70vw, 200px);
 		@media screen and (min-width: $screen-width-lg) {
-			max-width: min(70vw, 450px);
+			max-width: min(70vw, 400px);
 		}
 	}
 
@@ -32,7 +32,7 @@ header {
 		background-color: rgba(red($social-bg-color), green($social-bg-color), blue($social-bg-color), 0.95);
 		margin: auto;
 
-		border-radius: 15px;
+		border-radius: 2px;
 
 		a.btn {
 			@include cross-browser-transition(0.25s);
@@ -44,7 +44,7 @@ header {
 			}
 
 			font-size: 1.5em;
-			@media screen and (min-width: $screen-width-sm) {
+			@media screen and (min-width: $screen-width-md) {
 				font-size: 2.5em;
 			}
 		}
