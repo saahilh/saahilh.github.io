@@ -1,16 +1,20 @@
 header {
-	background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(100, 100, 100, 0.05)), url($base-url + '/assets/images/background-885-dark.jpg');
+	background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)), url($base-url + '/assets/images/background_toronto.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 
 	height: max-content;
 	padding: 50px;
 
-	.profile-picture, .profile-social {
-		max-width: min(70vw, 300px);
+	.profile-social {
+		max-width: min(70vw, 250px);
 		@media screen and (min-width: $screen-width-lg) {
 			max-width: min(70vw, 450px);
 		}
+	}
+
+	.profile-picture {
+		max-width: min(70vw, 250px);
 	}
 
 	.profile-picture {
@@ -19,7 +23,7 @@ header {
 	}
 
 	.profile-name {
-		color: $contrast-color;
+		color: $contrast-color-2;
 		font-weight: bold;
 		font-size: 3.5em;
 		@media screen and (min-width: $screen-width-lg) {
@@ -29,7 +33,7 @@ header {
 
 	.profile-social {
 		$social-bg-color: $bg-color-2;
-		background-color: rgba(red($social-bg-color), green($social-bg-color), blue($social-bg-color), 0.4);
+		background-color: rgba(red($social-bg-color), green($social-bg-color), blue($social-bg-color), 0.95);
 		margin: auto;
 
 		border-radius: 15px;
@@ -40,7 +44,7 @@ header {
 			padding: 10px 20px;
 			border-radius: 0;
 			&:hover, &:active {
-				background-color: $bg-color-2; 
+				background-color: $contrast-color; 
 			}
 
 			font-size: 1.5em;
