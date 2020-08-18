@@ -56,14 +56,10 @@
 			color: black; // for fallback font
 			background-color: white;
 		
-			&.node {
-				background-color: #333;
-			}
-		
 			&.typescript {
-				background-color: #152740;
+				height: 50px;
 			}
-		
+
 			&.jquery {
 				height: 50px;
 				margin-top: 12px;
