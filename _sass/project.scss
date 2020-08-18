@@ -29,20 +29,6 @@
 		min-width: min(500px, 30vw);
 	}
 
-	.buttons a {
-		margin: 2px;
-	}
-	
-	.description {
-		padding: 10px 30px;
-	}
-
-	.buttons {
-		padding-top: 10px;
-		text-align: center;
-		vertical-align: bottom;
-	}
-
 	.project-header {
 		padding: 10px 20px;
 
@@ -59,34 +45,38 @@
 			margin-top: 10px;
 		}
 	}
+	
+	.description {
+		padding: 10px 30px;
+	}
+
+	.buttons a {
+		margin: 2px;
+	}
 }
 
-.techs {
-	text-align: center;
+.tech {
+	height: 60px;
+	width: auto;
 
-	.tech {
-		height: 60px;
-		width: auto;
-	
-		padding: 10px;
-		margin-bottom: 10px;
-	
-		border-radius: 5px;
-	
-		color: black; // for fallback font
-		background-color: white;
-	
-		&.node {
-			background-color: #333;
-		}
-	
-		&.typescript {
-			background-color: #152740;
-		}
+	padding: 10px;
+	margin-bottom: 10px;
 
-		&.jquery {
-			height: 50px;
-			margin-top: 12px;
-		}
+	border-radius: 5px;
+
+	color: black; // for fallback font
+	background-color: white;
+
+	&.node {
+		background-color: #333;
+	}
+
+	&.typescript {
+		background-color: #152740;
+	}
+
+	&.jquery {
+		height: 50px;
+		margin-top: 12px;
 	}
 }
