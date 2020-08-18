@@ -1,10 +1,17 @@
-$contrast-color: #b14a54;
+$color-1: #2F4454;
+$color-2: #2E151B;
+$color-3: #DA7B93;
+$color-4: #376E6F;
+$color-5: #1C3334;
 
-$bg-color-1: #257e83;
-$text-color-1: white;
+$contrast-color: $color-4;
+$contrast-color-2: $color-3;
 
-$bg-color-2: white;
-$text-color-2: black;
+$bg-color-1: white;
+$text-color-1: $color-5;
+
+$bg-color-2: $color-1;
+$text-color-2: white;
 
 $screen-width-sm: 768px;
 $screen-width-md: 992px;
@@ -25,6 +32,13 @@ html {
 
 body {
 	font-family: Zilla Slab;
+}
+
+a {
+	color: $contrast-color-2;
+	&:hover {
+		color: $bg-color-2;
+	}
 }
 
 .center-text {

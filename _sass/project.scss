@@ -11,72 +11,75 @@
 	@media screen and (min-width: $screen-width-xl) {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-}
 
-.btn-dark {
-	background-color: $contrast-color;
-	border: none;
-}
+	.project {
+		background-color: $bg-color-1;
+		color: $text-color-1;
+		border-radius: 10px;
 
-.project {
-	background-color: $bg-color-2;
-	color: $text-color-2;
-	border-radius: 10px;
-
-	min-width: 70vw;
-	max-width: min(500px, 40vw);
-	@media screen and (min-width: $screen-width-sm) {
-		min-width: min(500px, 30vw);
-	}
-
-	.project-header {
-		padding: 10px 20px;
-
-		border-radius: 8px 8px 0 0;
-		width: 100%;
-
-		background-color: $contrast-color;
-		color: white;
-
-		h4 {
-			display: inline-block;
-			font-size: 2em;
-			font-family: Bad Script;
-			margin-top: 10px;
+		min-width: 70vw;
+		max-width: min(500px, 40vw);
+		@media screen and (min-width: $screen-width-sm) {
+			min-width: min(500px, 30vw);
 		}
-	}
-	
-	.description {
-		padding: 10px 30px;
-	}
 
-	.buttons a {
-		margin: 2px;
-	}
-}
+		.project-header {
+			padding: 10px 20px;
 
-.logo {
-	height: 60px;
-	width: auto;
+			border-radius: 8px 8px 0 0;
+			width: 100%;
 
-	padding: 10px;
-	margin-bottom: 10px;
+			background-color: $contrast-color;
+			color: white;
 
-	border-radius: 5px;
+			h4 {
+				display: inline-block;
+				font-size: 2em;
+				font-family: Bad Script;
+				margin-top: 10px;
+			}
+		}
+		
+		.description {
+			padding: 10px 30px;
+		}
 
-	color: black; // for fallback font
-	background-color: white;
+		.logo {
+			height: 60px;
+			width: auto;
+		
+			padding: 10px;
+			margin-bottom: 10px;
+		
+			border-radius: 5px;
+		
+			color: black; // for fallback font
+			background-color: white;
+		
+			&.node {
+				background-color: #333;
+			}
+		
+			&.typescript {
+				background-color: #152740;
+			}
+		
+			&.jquery {
+				height: 50px;
+				margin-top: 12px;
+			}
+		}
 
-	&.node {
-		background-color: #333;
-	}
+		.buttons {
+			a {
+				margin: 2px;
+			}
 
-	&.typescript {
-		background-color: #152740;
-	}
-
-	&.jquery {
-		height: 50px;
-		margin-top: 12px;
+			.btn-dark {
+				background-color: $bg-color-2;
+				color: $text-color-2;
+				border: none;
+			}
+		}	
 	}
 }
