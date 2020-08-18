@@ -57,14 +57,31 @@ html {
 	}
 }
 
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
 	.about .section-content {
 		display: grid;
 		grid-template-columns: 2fr [about-content] 6fr 2fr;
 	
 		p {
 			grid-column: about-content;
+			max-width: 800px;
 		}
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	header .profile-picture{
+		max-width: min(70vw, 450px);
+	}
+
+	.projects-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+
+	.project {
+		margin: 0;
 	}
 }
 

@@ -1,7 +1,6 @@
 .projects-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-around;
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .btn-dark {
@@ -10,8 +9,8 @@
 }
 
 .project {
-	min-width: 30vw;
-	max-width: 40vw;
+	min-width: min(500px, 30vw);
+	max-width: min(500px, 40vw);
 	margin: 13px auto;
 
 	.buttons {
