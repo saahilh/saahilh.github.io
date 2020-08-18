@@ -28,7 +28,8 @@ header {
 	}
 
 	.profile-social {
-		background-color: rgba(37, 126, 131, 0.3);
+		$social-bg-color: $bg-color-1;
+		background-color: rgba(red($social-bg-color), green($social-bg-color), blue($social-bg-color), 0.3);
 		margin: auto;
 
 		border-radius: 15px;
