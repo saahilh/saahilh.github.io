@@ -1,6 +1,16 @@
 .projects-container {
 	display: grid;
+	grid-gap: 15px;
+
 	grid-template-columns: 1fr;
+
+	@media screen and (min-width: $screen-width-lg) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (min-width: $screen-width-xl) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 .btn-dark {
@@ -9,16 +19,17 @@
 }
 
 .project {
-	min-width: min(500px, 30vw);
-	max-width: min(500px, 40vw);
-	margin: 10px auto;
-
-	border-radius: 10px;
-
 	background-color: $bg-color-2;
 	color: $text-color-2;
+	border-radius: 10px;
 
-	a {
+	min-width: 70vw;
+	max-width: min(500px, 40vw);
+	@media screen and (min-width: $screen-width-sm) {
+		min-width: min(500px, 30vw);
+	}
+
+	.buttons a {
 		margin: 2px;
 	}
 	
@@ -33,10 +44,9 @@
 	}
 
 	.project-header {
-		padding: 15px 20px;
+		padding: 10px 20px;
 
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-radius: 10px 10px 0 0;
 		width: 100%;
 
 		background-color: $contrast-color;
