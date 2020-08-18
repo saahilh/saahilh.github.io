@@ -69,6 +69,10 @@ html {
 	}
 }
 
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 1139px) {}
+
 @media screen and (min-width: 1140px) {
 	header{
 		.profile-picture, .profile-social{
@@ -91,8 +95,10 @@ html {
 	}
 }
 
-@media screen and (max-width: 991px) {}
-
-@media screen and (max-width: 1139px) {}
-
-@media screen and (min-width: 1140px) {}
+@media screen and (min-width: 1600px) {
+	.projects-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+}
