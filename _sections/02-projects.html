@@ -13,9 +13,9 @@ heading: Recent Projects
 		<div class="project-contents">
 			<div class="description">
 				<p>{{ project.description }}</p>
-				<div class="techs center-text">
-					{% for tech in project.techs %}
-						{% include tech.html tech=tech %}
+				<div class="logos center-text">
+					{% for logo in project.logos %}
+						{% include logo.html logo=logo %}
 					{% endfor %}
 				</div>
 				<p class="buttons center-text">

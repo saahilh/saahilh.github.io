@@ -1,0 +1,6 @@
+{% assign formatted_logo = logo | downcase | replace: " ", "-" %}
+<img
+    class="logo {{ formatted_logo }}"
+    src="{{ site.baseurl }}/assets/images/logos/{{ formatted_logo }}-logo.svg"
+    alt="{{ formatted_logo }}"
+>

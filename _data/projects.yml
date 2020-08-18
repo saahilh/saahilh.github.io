@@ -1,7 +1,7 @@
 - name: NextPine
   description: 
     I most recently developed a web app to manage project scheduling and task distribution. 
-  techs: 
+  logos: 
     - Node
     - React
   try_url: https://www.luxpmsoft.com/nextpine.html
@@ -9,7 +9,7 @@
 - name: GAMS
   description: 
     I created the Graduate Attribute Management System (GAMS) used by the Faculty of Engineering at McGill during their program accreditation analysis.
-  techs: 
+  logos: 
     - Node
     - TypeScript
     - SQLite
@@ -19,20 +19,20 @@
     When I first decided to learn React, I used it to create a Tetris implementation. I occasionally update this after inspiration from discussions with my brother.
   github_url: https://github.com/saahilh/tetris
   try_url: http://tetris.saahilhamayun.com
-  techs: 
+  logos: 
     - React
 
 - name: Jsx Lite
   description:
     To better understand the virtual DOMs used by modern front end libraries, I developed a lightweight jsx2html transpiler. 
   github_url: https://github.com/saahilh/jsx-lite
-  techs:
+  logos:
     - Babel
 
 - name: Classroom Friend
   description: 
     I created a webtool to help break communication barriers within the classroom.
-  techs:
+  logos:
     - Ruby on Rails
     - jQuery
   github_url: https://github.com/saahilh/ClassroomFriend
