@@ -6,6 +6,11 @@ $text-color-1: white;
 $bg-color-2: white;
 $text-color-2: black;
 
+$screen-width-sm: 768px;
+$screen-width-md: 992px;
+$screen-width-lg: 1140px;
+$screen-width-xl: 1600px;
+
 @mixin cross-browser-transition($transition) {
 	-o-transition: $transition;
 	-ms-transition: $transition;
@@ -18,40 +23,34 @@ html {
 	font-size: 14px;
 }
 
+body {
+	font-family: Zilla Slab;
+}
+
 @import "header";
 @import "section";
 @import "project";
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $screen-width-sm - 1) {
 	.project {
 		min-width: 70vw;
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screen-width-sm) {
 	section {
 		display: grid;
 		grid-template-rows: 1fr;
 	}
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: $screen-width-md) {
 	.about p {
 		max-width: 700px;
 	}
 }
 
-@media screen and (min-width: 1140px) {
-	header{
-		.profile-picture, .profile-social{
-			max-width: min(70vw, 450px);
-		}
-
-		.profile-name {
-			font-size: 5em;
-		}
-	}
-
+@media screen and (min-width: $screen-width-lg) {
 	.projects-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -63,7 +62,7 @@ html {
 	}
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: $screen-width-xl) {
 	.projects-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
