@@ -18,9 +18,14 @@
 		border-radius: 10px;
 
 		min-width: 70vw;
-		max-width: min(500px, 40vw);
-		@media screen and (min-width: $screen-width-sm) {
-			min-width: min(500px, 30vw);
+
+		@media screen and (min-width: $screen-width-lg) {
+			min-width: 0;
+			max-width: min(500px, 30vw);
+		}
+
+		@media screen and (max-width: $screen-width-sm) {
+			width: 100%;
 		}
 
 		.project-header {
