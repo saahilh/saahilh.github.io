@@ -38,16 +38,3 @@ body {
 .about p {
 	max-width: 700px;
 }
-
-@media screen and (min-width: $screen-width-sm) {
-	section {
-		display: grid;
-		grid-template-rows: 1fr;
-	}
-}
-
-@media screen and (min-width: $screen-width-xl) {
-	section .section-content {
-		max-width: 100%;
-	}
-}
