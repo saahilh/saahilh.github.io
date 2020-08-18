@@ -14,42 +14,13 @@ $text-color-2: black;
 	transition: $transition;
 }
 
-@mixin cross-browser-transform($transform) {
-	-o-transform: $transform;
-	-ms-transform: $transform;
-	-moz-transform: $transform;
-	-webkit-transform: $transform;
-	transform: $transform;
-}
-
 html {
 	font-size: 14px;
-}
-
-.center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	@include cross-browser-transform(translate(-50%, -50%));
-}
-
-.center-text {
-	text-align: center;
-}
-
-.bottom-left {
-	position: absolute;
-
-	padding: 10px;
-	bottom: 0;
-	left: 0;
 }
 
 @import "header";
 @import "section";
 @import "project";
-
-@media screen and (max-width: 575px) {}
 
 @media screen and (max-width: 767px) {
 	.project {
@@ -60,17 +31,7 @@ html {
 @media screen and (min-width: 768px) {
 	section {
 		display: grid;
-		grid-template-areas: 
-			"heading 			heading 				heading"
-			"section-content 	section-content section-content";
-		
-		.section-heading {
-			grid-area: heading;
-		}
-
-		.section-content {
-			grid-area: section-content;
-		}
+		grid-template-rows: 1fr;
 	}
 }
 
@@ -79,8 +40,6 @@ html {
 		max-width: 700px;
 	}
 }
-
-@media screen and (max-width: 1139px) {}
 
 @media screen and (min-width: 1140px) {
 	header{
