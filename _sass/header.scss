@@ -30,8 +30,7 @@ header {
 		color: white;
 		margin: auto;
 
-		max-width: 75vw;
-		width: 475px;
+		max-width: min(70vw, 300px);
 		border-radius: 15px;
 
 		a.btn {
