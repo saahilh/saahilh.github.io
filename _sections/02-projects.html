@@ -10,19 +10,17 @@ heading: Projects
 				{{ project.name }}
 			</h4>
 		</div>
-		<div class="project-contents">
-			<div class="description">
-				<p>{{ project.description }}</p>
-				<div class="logos center-text">
-					{% for logo in project.logos %}
-						{% include logo.html logo=logo %}
-					{% endfor %}
-				</div>
-				<p class="buttons center-text">
-					{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
-					{% include icon_button.html href=project.try_url text='Visit' icon='fa-external-link' %}
-				</p>
+		<div class="project-contents description">
+			<p>{{ project.description }}</p>
+			<div class="logos center-text">
+				{% for logo in project.logos %}
+					{% include logo.html logo=logo %}
+				{% endfor %}
 			</div>
+			<p class="buttons center-text">
+				{% include icon_button.html href=project.github_url text=project.name icon='fa-github' %}
+				{% include icon_button.html href=project.try_url text='Visit' icon='fa-external-link' %}
+			</p>
 		</div>
 	</div>
 {% endfor %}
