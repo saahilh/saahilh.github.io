@@ -1,3 +1,4 @@
+// Background
 header {
 	background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)), url($base-url + '/assets/images/background_toronto.jpg');
 	background-attachment: fixed;
@@ -10,14 +11,19 @@ header {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+}
 
+header {
 	height: max-content;
 	padding: 50px;
 
-	.profile-social, .profile-picture {
-		max-width: min(70vw, 200px);
+	.profile-picture {
+		max-width: max(25%, 200px);
 		@media screen and (min-width: $screen-width-lg) {
-			max-width: min(70vw, 400px);
+			max-width: max(25%, 400px);
+		}
+		@media screen and (min-width: $screen-width-xl) {
+			max-width: min(25%, 600px);
 		}
 	}
 
@@ -40,19 +46,27 @@ header {
 		background-color: rgba(red($social-bg-color), green($social-bg-color), blue($social-bg-color), 0.95);
 		margin: auto;
 
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: min(70vw, 600px);
+
 		border-radius: 2px;
 
 		a.btn {
+			flex: max-content;
+
 			@include cross-browser-transition(0.25s);
 			color: $text-color-2;
-			padding: 10px 20px;
-			border-radius: 0;
+			padding: 15px 20px;
 			&:hover, &:active {
 				background-color: $contrast-color; 
 			}
 
+			border-radius: 0;
+
 			font-size: 1.5em;
-			@media screen and (min-width: $screen-width-md) {
+			@media screen and (min-width: $screen-width-lg) {
 				font-size: 2.5em;
 			}
 		}
