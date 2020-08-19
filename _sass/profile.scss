@@ -18,7 +18,10 @@ header {
 	padding: 50px;
 
 	.profile-picture {
-		max-width: max(25%, 200px);
+		max-width: max(25%, 250px);
+		@media screen and (min-width: $screen-width-md) {
+			max-width: max(25%, 300px);
+		}
 		@media screen and (min-width: $screen-width-lg) {
 			max-width: max(25%, 400px);
 		}
@@ -49,12 +52,12 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		max-width: min(70vw, 600px);
+		max-width: min(60vw, 600px);
 
 		border-radius: 2px;
 
 		a.btn {
-			flex: max-content;
+			flex-basis: 30%;
 
 			@include cross-browser-transition(0.25s);
 			color: $text-color-2;
