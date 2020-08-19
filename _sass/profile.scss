@@ -1,6 +1,11 @@
 header {
 	background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)), url($base-url + '/assets/images/background_toronto.jpg');
 	background-attachment: fixed;
+
+	@supports (-webkit-overflow-scrolling: touch) {
+		background-attachment: scroll;
+	}
+
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
