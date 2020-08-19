@@ -2,6 +2,9 @@ header {
 	background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)), url($base-url + '/assets/images/background_toronto.jpg');
 	background-attachment: fixed;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 
 	height: max-content;
 	padding: 50px;
