@@ -88,12 +88,19 @@ header {
 				background-color: $contrast-color; 
 			}
 
-			border-radius: 0;
-
-			font-size: 1.5em;
-			@media screen and (min-width: $screen-width-lg) {
-				font-size: 2.5em;
+			svg {
+				fill: white;
 			}
+
+			border-radius: 0;
 		}
+	}
+}
+
+.btn svg {
+	margin-top: 5px;
+	height: 1.5em;
+	@media screen and (min-width: $screen-width-lg) {
+		height: 2.5em;
 	}
 }

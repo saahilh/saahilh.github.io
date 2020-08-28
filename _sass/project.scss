@@ -76,14 +76,22 @@
 			}
 
 			.btn-dark {
+				svg {
+					fill: $bg-color-2;
+					max-height: 14px;
+				}
 				color: $bg-color-2;
 				background-color: $text-color-2;
 				border: solid 1px $bg-color-2;
+				text-decoration: none;
 
 				&:hover, &:active {
+					svg {
+						fill: $text-color-2;
+					}
 					background-color: $bg-color-2;
+					border: 1px solid transparent;
 					color: $text-color-2;
-					border: none;
 				}
 			}
 		}	
