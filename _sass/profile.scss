@@ -1,6 +1,28 @@
+
 // Background
 header {
-	background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)), url($base-url + '/assets/images/background_toronto.jpg');
+	$background-filter: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05));
+
+	@media (max-width: $screen-width-xs) {
+		background-image: $background-filter, url($base-url + '/assets/images/background_toronto_576x564.jpg');
+	}
+
+	@media (max-width: $screen-width-sm) {
+		background-image: $background-filter, url($base-url + '/assets/images/background_toronto_768x564.jpg');
+	}
+	
+	@media (max-width: $screen-width-md) {
+		background-image: $background-filter, url($base-url + '/assets/images/background_toronto_992x767.jpg');
+	}
+	
+	@media (max-width: $screen-width-lg) {
+		background-image: $background-filter, url($base-url + '/assets/images/background_toronto_1140x882.jpg');
+	}
+	
+	@media (min-width: $screen-width-lg + 1) {
+		background-image: $background-filter, url($base-url + '/assets/images/background_toronto_1920x1080.jpg');
+	}
+
 	background-attachment: fixed;
 
 	@supports (-webkit-overflow-scrolling: touch) {
