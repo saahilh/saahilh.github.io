@@ -1,14 +1,17 @@
 $color-1: #2F4454;
-$color-2: #2E151B;
-$color-3: #DA7B93;
-$color-4: #376E6F;
-$color-5: #1C3334;
+$color-2: #376E6F;
+$color-3: #1C3334;
+$color-4: hsl(345, 56%, 84%);
+$color-5: hsl(345, 56%, 67%);
+$color-6: hsl(345, 56%, 40%);
 
-$contrast-color: $color-4;
-$contrast-color-2: $color-3;
+$contrast-color: $color-2;
+$contrast-color-2-light: $color-4;
+$contrast-color-2: $color-5;
+$contrast-color-2-dark: $color-6;
 
 $bg-color-1: white;
-$text-color-1: $color-5;
+$text-color-1: $color-3;
 
 $bg-color-2: $color-1;
 $text-color-2: white;
@@ -71,7 +74,7 @@ body {
 }
 
 a {
-	color: $contrast-color-2;
+	color: $contrast-color-2-dark;
 	&:hover {
 		color: $bg-color-2;
 	}

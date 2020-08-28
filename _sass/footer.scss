@@ -1,8 +1,12 @@
 footer {
     text-align: center;
 	background-color: $bg-color-2;
-    color: $contrast-color-2;
+    color: $contrast-color-2-light;
     padding: 10px 0 20px 0;
+
+    a {
+        color: $contrast-color-2-light;
+    }
 
     a:hover {
         color: $contrast-color;
