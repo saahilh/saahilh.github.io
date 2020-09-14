@@ -10,6 +10,7 @@
   description:
     To better understand the virtual DOMs used by modern front end libraries, I developed a lightweight jsx2html transpiler. 
   github_url: https://github.com/saahilh/jsx-lite
+  try_url: "https://jsxlite.saahilhamayun.com"
   logos:
     - Babel
     - Jest
@@ -18,7 +19,7 @@
   description:
     I used React to create a Tetris implementation. I occasionally update this after inspiration from discussions with my brother.
   github_url: https://github.com/saahilh/tetris
-  try_url: http://tetris.saahilhamayun.com
+  try_url: https://tetris.saahilhamayun.com
   logos: 
     - React
 
@@ -37,4 +38,4 @@
     - Ruby on Rails
     - jQuery
   github_url: https://github.com/saahilh/ClassroomFriend
-  try_url: http://cf.saahilhamayun.com
+  try_url: https://cf.saahilhamayun.com
