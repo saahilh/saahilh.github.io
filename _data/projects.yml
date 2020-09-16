@@ -6,7 +6,7 @@
     - React
   try_url: https://www.luxpmsoft.com/nextpine.html
 
-- name: Jsx Lite
+- name: JSX Lite
   description:
     To better understand the virtual DOMs used by modern front end libraries, I developed a lightweight jsx2html transpiler. 
   github_url: https://github.com/saahilh/jsx-lite
