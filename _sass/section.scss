@@ -9,7 +9,7 @@
 }
 
 section {
-	padding: 20px 0;
+	padding: 50px 0;
 	
 	@media screen and (min-width: $screen-width-sm) {
 		display: grid;
@@ -20,7 +20,7 @@ section {
 		font-size: 3em;
 		text-decoration: underline;
 		text-decoration-color: $contrast-color-2;
-		padding-bottom: 10px;
+		padding-bottom: 50px;
 	}
 
 	.section-content {
