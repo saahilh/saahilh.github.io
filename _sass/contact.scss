@@ -1,5 +1,7 @@
 #contact-form {
-    width: 500px;
+    min-width: 300px;
+    width: 100%;
+    max-width: 500px;
 
     input {
         height: 30px;
@@ -10,6 +12,7 @@
         padding: 10px;
         border: solid 1px $bg-color-2;
         border-radius: 2px;
+        margin-bottom: 10px;
     }
 
     .submission-container {
