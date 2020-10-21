@@ -1,0 +1,39 @@
+---
+label: contact
+heading: Get in touch
+---
+<form id="my-form" action="https://formspree.io/f/xqkgqbad" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" />
+    <label>Message:</label>
+    <input type="text" name="message" />
+    <button id="my-form-button">Submit</button>
+    <p id="my-form-status"></p>
+</form>
+
+<script> 
+    window.addEventListener('DOMContentLoaded', setupContactForm);
+
+    function setupContactForm() {
+        var form = document.getElementById('my-form');
+        var button = document.getElementById('my-form-button');
+        var status = document.getElementById('my-form-status');
+
+        form.addEventListener('submit', function(ev) {
+            ev.preventDefault();
+            const url = form.action;
+            const { method } = form;
+            const body = new FormData(form);
+    
+            fetch(url, { method, body, headers: { 'Accept': 'application/json' } })
+                .then(() => {
+                    form.reset();
+                    button.style = 'display: none;';
+                    status.innerHTML = 'Thanks!';
+                }).catch((e) => {
+                    console.log(e);
+                    status.innerHTML = `Error! ${e}`;
+                });
+        });
+    }
+</script>
