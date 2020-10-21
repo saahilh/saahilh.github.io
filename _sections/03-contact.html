@@ -10,9 +10,11 @@ heading: Get in touch
     <label>Message</label>
     <textarea name="message"></textarea>
     <div class="submission-container">
-        <a class="btn btn-dark" id="my-form-button">Submit</a>
+        <button id="contact-form-button" class="btn btn-dark" action="submit">
+            Send
+        </button>
     </div>
-    <p id="my-form-status"></p>
+    <p id="contact-form-status"></p>
 </form>
 
 <script> 
@@ -20,8 +22,8 @@ heading: Get in touch
 
     function setupContactForm() {
         var form = document.getElementById('contact-form');
-        var button = document.getElementById('my-form-button');
-        var status = document.getElementById('my-form-status');
+        var button = document.getElementById('contact-form-button');
+        var status = document.getElementById('contact-form-status');
 
         form.addEventListener('submit', function(ev) {
             ev.preventDefault();
