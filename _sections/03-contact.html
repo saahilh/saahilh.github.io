@@ -2,12 +2,16 @@
 label: contact
 heading: Get in touch
 ---
-<form id="my-form" action="https://formspree.io/f/xqkgqbad" method="POST">
-    <label>Email:</label>
+<form id="contact-form" action="https://formspree.io/f/xqkgqbad" method="POST">
+    <label>Email</label>
     <input type="email" name="email" />
-    <label>Message:</label>
-    <input type="text" name="message" />
-    <button id="my-form-button">Submit</button>
+    <label>Subject</label>
+    <input type="text" name="subject" />
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <div class="submission-container">
+        <a class="btn btn-dark" id="my-form-button">Submit</a>
+    </div>
     <p id="my-form-status"></p>
 </form>
 
@@ -15,7 +19,7 @@ heading: Get in touch
     window.addEventListener('DOMContentLoaded', setupContactForm);
 
     function setupContactForm() {
-        var form = document.getElementById('my-form');
+        var form = document.getElementById('contact-form');
         var button = document.getElementById('my-form-button');
         var status = document.getElementById('my-form-status');
 

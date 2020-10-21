@@ -1,0 +1,24 @@
+#contact-form {
+    width: 500px;
+
+    input {
+        height: 30px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: solid 1px $bg-color-2;
+        border-radius: 2px;
+    }
+
+    .submission-container {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
