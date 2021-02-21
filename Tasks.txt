@@ -1,0 +1,17 @@
+TODO:
+    * Look into automating updates for the server
+    * Set up cloudflare for ddos protection?
+    * Set up deployment / build automation for apps
+    * Send email to self when app crashes
+    * Write detailed descriptions for all projects and put them on website
+        * NextPine:
+            * Most proud of:
+                * authxios (in the end decided to called it auth_fetch for usability lol)
+                * using screenreader to test accessibility and really figure out what it meant for a website to be accessible
+        * JSX Lite:
+            * Most proud of creating a web-based coding environment for what was initially just a backend project.
+                * Code is intangible and its hard to show people what's happening in the case of transformations.
+                    I wanted to increase the reach of the code and allowing people to easily access and try the transformation
+                    seemed perfect for that. It really fits the spirit of web development because it matches the essence of why 
+                    web app development is so big right now: it allows applications to be easily accessed and used by everyone
+                    without needing custom systems or big downloads.
