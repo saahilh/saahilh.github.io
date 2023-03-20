@@ -1,6 +1,6 @@
 - name: NextPine
   description: 
-    I most recently developed a web app to manage project scheduling and task distribution while working at <a href="https://www.luxpmsoft.com/">Lux PM</a>. 
+    I developed a web app to manage project scheduling and task distribution while working at <a href="https://www.luxpmsoft.com/">Lux PM</a>. 
   logos: 
     - Node
     - React
